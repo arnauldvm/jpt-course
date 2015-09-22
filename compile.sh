@@ -2,10 +2,14 @@
 
 srcpath="$1"
 
-tgtdir=build/html
-mkdir -p "$tgtdir"
+srcbasedir=src/main/adoc
+tgtbasedir=build/html
+rootdir="$(pwd)"
 
-tgtpath="$tgtdir/${srcpath%.adoc}.html"
+tgtpath="$(echo "$srcpath" |
+  perl -pe 's#^\Q'"$rootdir"'\E\/##;
+            s#^\Q'"$srcbasedir"'\E#'"$tgtbasedir"'#;
+            s#\.adoc$#.html#')"
 tgtdir="$(dirname "$tgtpath")"
 mkdir -p "$tgtdir"
 
