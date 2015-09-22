@@ -1,0 +1,70 @@
+Java Performance Tuning - Course description
+============================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v1.0, 26-Nov-2014: Initial version, adapted for public use
+
+Target audience
+---------------
+
+Architects, Senior developers (, Jr developers), DevOps
+
+Prerequisites
+-------------
+
+* Required: Good knowledge of Java language
+* Recommended: Good Knowledge of JEE
+* Recommended: Knowledge of Operating Systems internals
+* Recommended: Knowledge of JVM internals
+* Recommended: Knowledge of TCP/IP internals
+
+Training objectives
+-------------------
+
+[quote, (in Kodewerk)]
+_____
+. Quickly identify the root causes of poor performance in your applications
+. Eliminate conditions that will prevent you from finding performance bottlenecks
+. Find critical supportive evidence before deciding on a potentially expensive course of action
+. Find performance issues before they make their escape into your production system
+_____
+
+Course content
+--------------
+
+ * Reminder of some JVM internals
+ * Performance testing methodology, benchmarking tools
+ * Performance analysis methodology, diagnostic model, monitoring tools, profiling
+ ** threading model
+ ** memory usage (GC)
+ ** better DB performance through good usage of JPA
+ ** algorithmic complexity
+ ** other causes of performance issues
+ * Performance testing process
+
+Skills acquired during the training
+-----------------------------------
+
+ - Better understanding of root causes of performance issues
+ - How to diagnose the source of a performance issue
+ - Avoid introducing patterns that jeopardize performance
+
+Out-of-scope
+------------
+
+ - DOT.net performance
+ - Performance of non-relational databases
+ - Performance of real-time operating systems
+ - Performance of non-JVM based languages
+ - Perl Internals
+ - R detailed design
+
+Approach
+--------
+
+Theory + hands on
+
+Certification
+-------------
+
+None
+
