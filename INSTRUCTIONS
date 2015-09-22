@@ -11,7 +11,7 @@ $ brew install fswatch
 Automatic compilation while editing
 
 -----
-$ fswatch -r -i '\.adoc$' -e '.*' src/main/adoc | xargs -n1 ./compile.sh
+$ fswatch -r -i '\.adoc$' -e '.*' src/main/adoc | xargs -n1 ./compile.sh &
 -----
 
 Build all
