@@ -17,6 +17,6 @@ $ fswatch -r -i '\.adoc$' -e '.*' src/main/adoc | xargs -n1 ./compile.sh
 Build all
 
 -----
-$ find src/main/adoc -type f -name '*.adoc' | xargs -n1 ./compile.sh
+$ ./build.sh
 -----
 
