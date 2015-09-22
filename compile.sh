@@ -13,6 +13,9 @@ tgtpath="$(echo "$srcpath" |
 tgtdir="$(dirname "$tgtpath")"
 mkdir -p "$tgtdir"
 
+build_options="$(head -1 "$srcpath" |
+  perl -pe 's#^//\s*build_options:\s*(.*)\s*$#$1# or $_=""')"
+
 set -x
-asciidoc -o "$tgtpath" "$srcpath"
+asciidoc $build_options -o "$tgtpath" "$srcpath"
 
