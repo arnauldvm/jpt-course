@@ -1,0 +1,72 @@
+// build_options: 
+Java Performance Tuning - Training Plan
+=======================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v0.0, 23-Sep-2015: Draft version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+
+Day 1
+-----
+
+AM
+~~
+
+* Introduction
+* _Workshop 0: install training toolsuite_
+* Anatomy of a test
+* Benchmarking tool: basics
+* _Workshop 1: write your first performance tests_
+
+[role="incremental"]
+PM
+~~
+
+* Planning your test
+* Load profiles
+* Metrics
+* Benchmarking tool: threading model, timers
+* Benchmarking tool: parameters
+* _Workshop 2: wrap up your performance tests_
+
+Day 2
+-----
+
+AM
+~~
+
+* Reminder about OSes (scheduling...)
+* Reminder of some JVM internals (GC, JIT...)
+* Performance Diagnostic Model (PMD): Introduction
+* PMD: Layer 1 (OS)
+* OS Monitoring tools
+* _Workshop 3 (interactive): PMD Layer 1 (OS) in practice_
+
+[role="incremental"]
+PM
+~~
+
+* PMD: Layer 2 (JVM)
+* JVM Monitoring tools
+* _Workshop 4 (interactive): PMD Layer 2 (JVM) in practice_
+
+Day 3
+-----
+
+AM
+~~
+
+* PMD: Layer 3 (Application)
+* Application Monitoring tools
+* _Workshop 5 (interactive): PMD Layer 3 (Application) in practice_
+
+[role="incremental"]
+PM
+~~
+
+* Performance testing process
+* Other analysis tools (RG, Excel, R, ELK...)
+* _Workhop 6: Using the Report Generator (beta)_
+
