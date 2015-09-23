@@ -11,6 +11,10 @@ v0.0, 23-Sep-2015: Draft version
 Day 1
 -----
 
+*****
+Writing performance tests
+*****
+
 AM
 ~~
 
@@ -33,6 +37,10 @@ PM
 
 Day 2
 -----
+
+*****
+Investigating performance issues
+*****
 
 AM
 ~~
@@ -58,6 +66,10 @@ Day 3
 AM
 ~~
 
+*****
+Investigating performance issues (cont)
+*****
+
 * PDM: Layer 3 (Application)
 * Application Monitoring tools
 * _Workshop 5 (interactive): PDM Layer 3 (Application) in practice_
@@ -65,6 +77,10 @@ AM
 [role="incremental"]
 PM
 ~~
+
+*****
+Going further
+*****
 
 * Performance testing process
 * Other analysis tools (RG, Excel, R, ELK...)
