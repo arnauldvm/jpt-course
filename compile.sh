@@ -10,6 +10,12 @@ tgtpath="$(echo "$srcpath" |
   perl -pe 's#^\Q'"$rootdir"'\E\/##;
             s#^\Q'"$srcbasedir"'\E#'"$tgtbasedir"'#;
             s#\.adoc$#.html#')"
+
+if [ "$tgtpath" -nt "$srcpath" ]; then
+  echo "$tgtpath already exists and is up to date, nothing to do."
+  exit
+fi
+
 tgtdir="$(dirname "$tgtpath")"
 mkdir -p "$tgtdir"
 
