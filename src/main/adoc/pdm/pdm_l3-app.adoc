@@ -1,0 +1,20 @@
+// build_options: 
+Java Performance Tuning - PDM Layer 3: Application
+==================================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v0.0, dd-mmm-2015: Draft version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+
+_(link:../extra/training_plan.html#(5)[back to plan])_
+
+Content
+-------
+
+* ...
+* tools: threads dump, flight record, JMX/MBeans, profiler (VisualJ), java melody ...
+
+NOTE: Application here also includes the Application Container!
+

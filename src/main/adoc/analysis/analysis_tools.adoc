@@ -1,0 +1,19 @@
+// build_options: 
+Java Performance Tuning - Analysis Tools
+========================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v0.0, dd-mmm-2015: Draft version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+
+_(link:../extra/training_plan.html#(5)[back to plan])_
+
+Content
+-------
+
+* tools: RG, Excel, R, ELK...
+* Report Generator ?
+* Hyperion ?
+
