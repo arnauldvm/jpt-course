@@ -90,3 +90,17 @@ Going further
 * JPA performance (?)
 * Web front-end performance (?)
 
+Presentations
+-------------
+
+* link:../intro/introduction.html[Introduction]
+* link:../intro/objectives.html[Objectives]
+* link:../benchmark/benchmark_design.html[Designing your benchmarks]
+* link:../benchmark/benchmark_tool.html[Benchmarking tools]
+* link:../pdm/pdm_intro.html[Performance Diagnostic Model (introduction)]
+* link:../pdm/pdm_l1-os.html[PDM Layer 1: Operating System]
+* link:../pdm/pdm_l2-os.html[PDM Layer 2: Java Virtual Machine]
+* link:../pdm/pdm_l3-os.html[PDM Layer 3: Application]
+* link:../process/perf_test_process.html[Performance Testing Process]
+* link:../analysis/analysis_tools.html[Analysis Tools]
+
