@@ -12,7 +12,7 @@ Performance Diagnostic Model and sample case studies
 :theme:         volnitsky
 :max-width:     45em
 :icons:
-//:data-uri:// doesnt' work?
+:data-uri:
 :pdm-width:			25%
 
 Plan
