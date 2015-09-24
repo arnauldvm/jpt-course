@@ -32,5 +32,5 @@ build_options="$(head -1 "$srcpath" |
 
 set -x
 asciidoc $build_options -o "$tgtpath" "$srcpath"
-asciidoc $build_options -b html -o - "$srcpath" | wkhtmltopdf - "$tgtpdfpath"
+asciidoc $build_options -b html -a toc2! -a toc -a numbered -o - "$srcpath" | wkhtmltopdf - "$tgtpdfpath"
 
