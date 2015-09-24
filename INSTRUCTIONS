@@ -5,6 +5,7 @@ Preparation
 
 -----
 $ brew install asciidoc
+$ brew cask install wkhtmltopdf
 $ brew install fswatch # optional
 -----
 
