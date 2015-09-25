@@ -8,6 +8,14 @@ v0.0.1, 24-Sep-2014: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 :pdm-width: 25%
+:tabletags-blue.bodydata: <td style="background-color:skyblue;text-align:center">|</td>
+:tabledef-default.blue-style: tags="blue"
+:tabletags-none.bodydata: <td style="background-color:gray;text-align:center">|</td>
+:tabledef-default.none-style: tags="none"
+:tabletags-green.bodydata: <td style="background-color:palegreen;text-align:center">|</td>
+:tabledef-default.green-style: tags="green"
+:tabletags-red.bodydata: <td style="background-color:indianred;text-align:center">|</td>
+:tabledef-default.red-style: tags="red"
 
 _(link:../extra/training_plan.html#(5)[back to plan])_
 
@@ -69,7 +77,7 @@ Layer 1: OS
 | {nbsp}
 | {nbsp}
 | {nbsp}
-| OS (Hardware)
+b| OS (Hardware)
 |===========
 
 Role:: Manages access to hardware via:
@@ -92,7 +100,7 @@ Layer 2: JVM
 |===========
 | {nbsp}
 | {nbsp}
-| Java VM
+g| Java VM
 | OS (Hardware)
 |===========
 
@@ -114,7 +122,7 @@ Layer 3: Application
 [width="{pdm-width}", halign="center", float="right"]
 |===========
 | {nbsp}
-| Application
+r| Application
 | Java VM
 | OS (Hardware)
 |===========
@@ -134,7 +142,7 @@ Layer 4: Actors
 
 [width="{pdm-width}", halign="center", float="right"]
 |===========
-| Actors
+n| Actors
 | Application
 | Java VM
 | OS (Hardware)
@@ -155,13 +163,13 @@ Usage patterns?::
 
 [width="50%", halign="center", align="center"]
 |===========
-| *Actors* +
+n| *Actors* +
 Usage patterns
-| *Application* +
+r| *Application* +
 Locks, External systems
-| *Java VM* +
+g| *Java VM* +
 Memory, Process
-| *OS (Hardware)* +
+b| *OS (Hardware)* +
 CPU, Memory, Disk IO, Network, Locks
 |===========
 
