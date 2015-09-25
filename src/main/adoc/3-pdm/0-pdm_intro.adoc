@@ -50,7 +50,7 @@ Performance tuning::
 * *Java Performance Tuning (training/workshop). Kirk Perdine. Kodewerk*
    http://www.kodewerk.com/workshop.html
 * Java Performance. Charlie Hunt, Binu John. 2011. The Java Series. Addison-Wesley Professional
-* Java Performance (The Definitie Guide). Scott Oaks. 2014. O'Reilly Media
+* Java Performance (The Definitive Guide). Scott Oaks. 2014. O'Reilly Media
 
 Broader scope::
 * Effective Java (2nd Edition). Joshua Bloch. 2008. The Java Series. Addison-Wesley
