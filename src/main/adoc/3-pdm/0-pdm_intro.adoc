@@ -183,5 +183,33 @@ Four candidates::
 Dominator Decision Tree
 -----------------------
 
-image::images/DominatorDecisionTree.png[height="450", align="center"]
+[graphviz]
+-----
+digraph G {
+  size ="7,4";
+  subgraph {
+    rank=same
+    start
+    crit1->crit2->crit3
+    Application
+  }
+  start[shape=circle, label=" "]
+  crit1[shape=diamond, label="Sys CPU >\n1/10 of\nUser CPU"]
+  crit2[shape=diamond, label="CPU\nnear\n100%"]
+  crit3[shape=diamond, label="Efficient\nObject\nLifecycle"]
+
+  subgraph {
+  OS[shape=box3d, margin=0.3, style="filled,bold", fillcolor=skyblue, fontsize=20, fontname="sansserif bold"]
+  No_Dominator[label="No Dominator", shape=box3d, margin=0.3, style="filled,bold", fillcolor=gray, fontsize=20, fontname="sansserif bold"]
+  JVM[shape=box3d, margin=0.3, style="filled,bold", fillcolor=palegreen, fontsize=20, fontname="sansserif bold"]
+  Application[shape=box3d, margin=0.3, style="filled,bold", fillcolor=indianred, fontsize=20, fontname="sansserif bold"]
+  }
+
+  start->crit1
+  crit3->Application [label=" true "]
+  crit1->OS [label=" true "]
+  crit2->No_Dominator [label=" false "]
+  crit3->JVM [label=" false "]
+}
+-----
 
