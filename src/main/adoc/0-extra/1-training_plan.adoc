@@ -107,6 +107,7 @@ Presentations
 Extra
 ~~~~~
 
+* link:../0-extra/0-course_description.html[Course Description]
 * link:../0-extra/2-internals_os.html[Operating Systems Internals]
 * link:../0-extra/3-internals_jvm.html[Java VM Internals]
 
