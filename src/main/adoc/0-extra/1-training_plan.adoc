@@ -45,7 +45,7 @@ Investigating performance issues
 AM
 ~~
 
-* Reminder about OSes (scheduling...)
+* Reminder about OSes internals (scheduling...)
 * Reminder of some JVM internals (GC, JIT...)
 * Performance Diagnostic Model (PDM): Introduction
 * PDM: Layer 1 (OS)
