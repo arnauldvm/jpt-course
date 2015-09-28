@@ -8,7 +8,7 @@ v0.0, 24-Sep-2015: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 
-_(link:../extra/training_plan.html#(5)[back to plan])_
+_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
