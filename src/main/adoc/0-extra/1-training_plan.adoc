@@ -104,3 +104,9 @@ Presentations
 * link:../4-process/0-perf_test_process.html[Performance Testing Process]
 * link:../5-analysis/1-analysis_tools.html[Analysis Tools]
 
+Extra
+~~~~~
+
+* link:../0-extra/2-internals_os.html[Operating Systems Internals]
+* link:../0-extra/3-internals_jvm.html[Java VM Internals]
+

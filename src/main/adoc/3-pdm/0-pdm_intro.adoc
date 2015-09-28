@@ -25,22 +25,11 @@ Content
 * Objective
 * References
 * The four layers model
+* Decision Tress
  
 
 Objective
 ---------
-
-
-Reminder about OSes
--------------------
-
-(scheduling...)
-
-
-Reminder of some JVM internals
-------------------------------
-
-(GC, JIT...)
 
 
 References
