@@ -636,3 +636,28 @@ Is thrown when:
 * native memory is full
 * stack or perm gen filled
 
+
+Part 2
+------
+
+[graphviz,,twopi]
+-----
+digraph G {
+  size = "7,4";
+  title[shape=doubleoctagon, label="Just-in-Time\nCompilation", fontsize=36, fontname="sansserif bold"]
+}
+-----
+
+
+JIT: Origin
+-----------
+
+* General purpose language
+* Bytecode
+
+=> originally slow
+
+=> need machine specific optimization
+
+-> solution: JIT (HotSpot)
+
