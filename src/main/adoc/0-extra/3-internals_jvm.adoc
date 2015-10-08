@@ -595,3 +595,12 @@ GC Strategies
 
 (stw = "stop-the-world")
 
+
+GC Strategies: Choice
+---------------------
+
+* Parallel/ParallelOld: better for throughput, typically for +batches+
+* ConcMarkSweep :
+** better for optimal response time (less "stop the world"), typically for +web applications+
+** also better when there are strong limitations on available memory (mobile devices, cloud instances...)
+
