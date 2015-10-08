@@ -39,6 +39,16 @@ digraph G {
 -----
 
 
+JVM Memory model
+----------------
+
+* native area: per thread: java stack, native stack
+* method area: permanent generation
+* heap space
+
+image::Cookbook_JVMArguments_2_MemoryModel.png[]
+
+
 What is Garbage Collection (GC)
 -------------------------------
 
