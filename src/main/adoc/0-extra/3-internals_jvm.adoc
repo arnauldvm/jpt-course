@@ -248,6 +248,18 @@ digraph G {
 -----
 
 
+GC Principles: GC threads
+-------------------------
+
+Conclusion: it is necessary to regularly "browse" the memory to find objects that can be released.
+
+! Must be thread safe.
+
+"stop the world"::
+** all application threads are "marked" so they know they should stop
+** each application thread stops when reaching a _safe point_
+** Collection may start when all application threads are halted
+
 GC Principles: GC roots
 -----------------------
 
