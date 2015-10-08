@@ -615,6 +615,17 @@ GC Strategies: Choice
 ** also better when there are strong limitations on available memory (mobile devices, cloud instances...)
 
 
+GC and Memory paging
+--------------------
+
+
+* GC is constantly accessing the whole heap area.
+* this breaks the "locality of reference" principle
+* it breaks the paging algorithms
+
+=> Avoid!
+
+
 OutOfMemoryError
 ----------------
 
