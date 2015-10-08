@@ -614,3 +614,14 @@ GC Strategies: Choice
 ** better for optimal response time (less "stop the world"), typically for +web applications+
 ** also better when there are strong limitations on available memory (mobile devices, cloud instances...)
 
+
+OutOfMemoryError
+----------------
+
+Is thrown when:
+
+* after: heap full -> full GC -> -XX:GCTimeLimit exceeded (98%)
+* after: heap full -> full GC -> -XX:GCHeapFreeLimit exceeded (2%)
+* native memory is full
+* stack or perm gen filled
+
