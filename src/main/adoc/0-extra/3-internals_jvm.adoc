@@ -550,3 +550,14 @@ Minor GC:: young space
 Major GC:: old space
 Full GC:: both
 
+
+GC Principles: Triggers
+-----------------------
+
+These events trigger a memory collection cycle:
+
+* periodic collection
+* memory usage above threshold
+* allocation failure
+* +System.gc()+, i.e. +Runtime.gc()+
+
