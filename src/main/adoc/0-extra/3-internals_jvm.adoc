@@ -561,3 +561,37 @@ These events trigger a memory collection cycle:
 * allocation failure
 * +System.gc()+, i.e. +Runtime.gc()+
 
+
+GC Strategies
+-------------
+
+JRockit 6::
+* ...
+
+HotSpot 6, 7::
+* "Parallel": minor collections with multiple threads in //
+* "ParallelOld": parallel compaction during major collections
+* "Serial"; for monocore CPU
+* "ConcMarkSweep":
+** most of the collection work is done concurrently with application threads
+** but there is no compaction
+
+HotSpot 8, 9::
+* "G1": improved algorithm, based on the Mark-and-Copy principles
+
+
+GC Strategies
+-------------
+
+[options="header", cols="1<,3^,3^"]
+|===
+| Strategy      | Young                  | Tenured
+
+| Serial        | Mark-and-Copy    (stw) | Mark-Sweep-Compact (stw)
+| Parallel      | // Mark-and-Copy (stw) | -
+| ParallelOld   | -                      | // Mark-Sweep-Compact (stw)
+| ConcMarkSweep | // Mark-and-Copy (stw) | // Mark-Sweep (mostly concurrent)
+|====
+
+(stw = "stop-the-world")
+
