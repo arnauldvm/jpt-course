@@ -533,6 +533,16 @@ Old Generation / Tenured::
 * much slower
 
 
+GC Principles: M&C vs. MSC
+--------------------------
+
+Mark-and-Copy::
+image:GC-mark-and-copy-in-Java.png[]
+
+Mark-Sweep-Compact::
+image:GC-mark-sweep-compact.png[]
+
+
 GC Principles: Collection kinds
 -------------------------------
 
