@@ -50,10 +50,11 @@ Actually:
 . Mark all _the rest_ as garbage
 
 
-GC Principles: References Count
--------------------------------
+(Too) simple solution: References Counting
+------------------------------------------
 
 Counting the references to an object may easily be automated.
+(E.g. Python prior v2)
 
 [graphviz,,fdp]
 -----
@@ -115,8 +116,8 @@ digraph G {
 -----
 
 
-GC Principles: References Count
--------------------------------
+(Too) simple solution: References Counting
+------------------------------------------
 
 ...
 
@@ -180,8 +181,8 @@ digraph G {
 -----
 
 
-GC Principles: References Count
--------------------------------
+(Too) simple solution: References Counting
+------------------------------------------
 
 But:
 
@@ -253,6 +254,9 @@ GC Principles: GC roots
 "Any object reference your program can access directly,
 without going through another object",
 i.e. all objects that _cannot_ be released.
+
+Or: GC roots are _external_ pointers, i.e. those where the parent and child
+are in different memory pools.
 
 * Class loaded by _system_ class loaders (not by custom ones)
 * Active threads
@@ -345,6 +349,11 @@ GC Principles: Compacting
 ** slows down allocation
 ** limits available memory
 
+-> achieved by moving all objects in contiguous blocks
+
+* can be quite slow
+* needs to "stop the world"
+
 
 GC Principles: "Generational Hypothesis"
 ----------------------------------------
@@ -394,7 +403,7 @@ Eden::
 * triggers a young collection when full
 * objects surviving young collection are copied to one of the survivor spaces
 * then the whole area is considered empty (no need to explicitely delete all unmarked objects)
-* = +Mark and Copy+
+* = +Mark and Copy+ (thanks to the copy, no need to +sweep+ and the +compact+ is done on the fly)
 
 
 GC Principles: Memory Pools
@@ -507,7 +516,7 @@ Old Generation / Tenured::
 * less frequent collections
 * [line-through]+Mark and Copy+, objects are moved around to minimize fragmentation:
 ** +Mark+
-** +Deleted+
+** +Delete+
 ** +Compact+
 * much slower
 
