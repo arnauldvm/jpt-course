@@ -21,3 +21,15 @@ Content
 ** timers
 ** parameters
 
+
+Content (bis)
+-------
+
+* injectors (p37)
+* GUI (heavy client) testing (p38-41)
+* Regression testing (p42)
+* Standard APi testing (p43-44) + Gattling, LoadRunner ...
+* Jmeter ... (pp45...83, 89...97)
+* Threading model (p84-89)
+* Mock-Ups (p98-99)
+
