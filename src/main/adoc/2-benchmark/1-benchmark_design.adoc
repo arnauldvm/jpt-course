@@ -18,3 +18,23 @@ Content
 * load profiles
 * metrics
 
+
+Content (bis)
+-------
+
+* objective of the test (p4,17)
+* what is a performance test (p5)
+* Unit of Test (p6)
+* Test the test (p7)
+* Performance metrics (p8-9)
+* Types of performance tests (p12-13)
+* Possible results (p15)
+* Steps (p16)
+* actors (p20)
+* test env (vs. UoT) (p21)
+* usage patterns - time (p22-26)
+* usage patterns - data (caching!) (p27-28)
+* test execution (p29-31)
+* analyse/verify results (p32-35)
+
+
