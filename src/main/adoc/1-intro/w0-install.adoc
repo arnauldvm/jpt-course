@@ -37,10 +37,13 @@ Using the kit requires one of the following command-line interpreter (CLI):
 Installation
 ------------
 
-* Download the kit from +//AVM-PC/Public+
+* Copy the kit from one of the following locations:
+** +//AVM-PC/Public+
+** https://github.com/arnauldvm/jpt-exercises/blob/master/download.md[GitHub / Dropbox]
+** USB key
 * Choose appropriate platform:
-** +jpt-kit-win32-x64.zip+
-** +jpt-kit-osx.zip+
+** +jpt-kit-win32-x64.zip+ (269M)
+** +jpt-kit-osx.zip+ (99M)
 * Extract to your favorite location (e.g. +C:\javadev\jpt+)
 * Download the exercices from the same location: +jpt-apps.zip+
 * Extract to the same location
