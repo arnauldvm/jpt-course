@@ -35,7 +35,10 @@ Using the kit requires one of the following command-line interpreter (CLI):
 * preferred: +bash+ (Windows and OSX)
 * also supported: +CMD.EXE+ (Windows)
 
-You will certainly want to use a decent browser, with a developer mode (e.g. Google Chrome)
+For the next workshops, you will also need:
+
+* a decent browser, with a developer mode (e.g. Google Chrome)
+* a cool text editor (programmer friendly, like: VI, SublimeText, Notepad++...)
 
 Installation
 ------------
