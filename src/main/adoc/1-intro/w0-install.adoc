@@ -14,7 +14,9 @@ _(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 Content
 -------
 
+*****
 Installing the training toolsuite
+*****
 
 * Prerequisites
 * Installation
