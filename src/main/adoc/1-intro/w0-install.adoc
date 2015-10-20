@@ -8,6 +8,7 @@ v1.0, 20-Oct-2015: Initial version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 :icons:
+:br: pass:[<br>]
 
 _(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
@@ -21,6 +22,7 @@ Installing the training toolsuite
 * Prerequisites
 * Installation
 * Verification
+* Simple benchmarking
 
 
 Prerequisites
@@ -33,6 +35,7 @@ Using the kit requires one of the following command-line interpreter (CLI):
 * preferred: +bash+ (Windows and OSX)
 * also supported: +CMD.EXE+ (Windows)
 
+You will certainly want to use a decent browser, with a developer mode (e.g. Google Chrome)
 
 Installation
 ------------
@@ -89,4 +92,59 @@ $ curl -I http://www.smals.be # Simple HTTP request
 $ perf # Shows system activity metrics every second, hit Ctrl+C to halt
 ^C
 ----
+
+
+Simple benchmarking (launch app)
+--------------------------------
+
+* The subdirectory +app00+ contains a very simple webapp
+** The webapp echoes the HTTP request headers
+* No container is required: built using +com.sun.net.httpserver.HttpServer+ (included in the Oracle JRE)
+* Compile the app:
+----
+$ cd app00
+$ ./compile.sh # "compile.bat" under CMD.EXE
+----
+* Launch the app:
+----
+$ ./runserver.sh # "runserver.bat" under CMD.EXE
+Server is listening on port 7666
+----
+** Should the port not be free, you can change it by editing the launch script (option +-p<port>+)
+
+
+Simple benchmarking (verify app)
+--------------------------------
+
+* Open a new CLI (remember to execute +. setenv.sh+ or +setenv.bat+)
+* Check that the webapp correctly answers to request{br}
+_(the exact output may slightly differ depending on your curl version)_:
+----
+$ curl localhost:7666 # adapt the port number if required
+Accept=[*/*]
+Host=[localhost:7666]
+User-agent=[curl/7.45.0]
+----
+* Use your browser to navigate to +http://localhost:7666+{br}
+and compare the results
+
+
+Simple benchmarking (jmeter)
+----------------------------
+
+* In your second CLI, launch jmeter:
+----
+$ jmeter # or "jm"
+----
+* Right-click on "Test Plan" >> Add >> Threads (Users) >> Thread Group
+* Right-click on "Thread Group" >> Add >> Sampler >> HTTP Request
+* Left-click on "HTTP Request", and key in the following fields:
+** Server name or IP: [ localhost ]
+** Port Number: [ 7666 ]
+* Right-click on "HTTP Request" >> Add >> Listener >> View Results Tree
+* Menu "File" >> Save
+** Choose an appropriate location and name to save your performance test script (e.g. +src/main/jmeter/app00.jmx+)
+* Menu "Run" >> Start
+** The test is executed
+* Check the response by examining the "View Results Tree" panel
 
