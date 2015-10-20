@@ -100,8 +100,8 @@ Presentations
 * link:../2-benchmark/2-benchmark_tool.html[Benchmarking tools]
 * link:../3-pdm/0-pdm_intro.html[Performance Diagnostic Model (introduction)]
 * link:../3-pdm/1-pdm_l1-os.html[PDM Layer 1: Operating System]
-* link:../3-pdm/2-pdm_l2-os.html[PDM Layer 2: Java Virtual Machine]
-* link:../3-pdm/3-pdm_l3-os.html[PDM Layer 3: Application]
+* link:../3-pdm/2-pdm_l2-jvm.html[PDM Layer 2: Java Virtual Machine]
+* link:../3-pdm/3-pdm_l3-app.html[PDM Layer 3: Application]
 * link:../4-process/0-perf_test_process.html[Performance Testing Process]
 * link:../5-analysis/1-analysis_tools.html[Analysis Tools]
 
