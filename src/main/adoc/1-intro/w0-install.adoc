@@ -1,0 +1,87 @@
+// build_options: 
+Java Performance Tuning - Workshop 0
+====================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v1.0, 20-Oct-2015: Initial version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
+
+_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
+
+Content
+-------
+
+Installing the training toolsuite
+
+* Prerequisites
+* Installation
+* Verification
+
+
+Prerequisites
+-------------
+
+Installing the kit requires an unzipper (+WinZip+, +7-zip+...).
+
+Using the kit requires one of the following command-line interpreter (CLI):
+
+* preferred: +bash+ (Windows and OSX)
+* also supported: +CMD.EXE+ (Windows)
+
+
+Installation
+------------
+
+* Download the kit from +//AVM-PC/Public+
+* Choose appropriate platform:
+** +jpt-kit-win32-x64.zip+
+** +jpt-kit-osx.zip+
+* Extract to your favorite location (e.g. +C:\javadev\jpt+)
+* Download the exercices from the same location: +jpt-apps.zip+
+* Extract to the same location
+* Your install location should look like this:
+----
+app00/   app01/   local/   setenv.bat   setenv.sh
+----
+
+
+Verification (init)
+-------------------
+
+* Start your preferred CLI (bash or CMD) and CD to your install location
+* Execute +. setenv.sh+ 'bash) or +setenv.bat+ (CMD)
+** Your CLI environment is updated
+
+WARNING: This command must be executed each time you start a new CLI!
+
+* A message gives you the list of available tools:
+
+[horizontal]
+java:: Oracle Java 8 SDK (runtime, compiler, profiler...)
+jmeter _or_ jm:: benchmarking tool
+mat:: Memory Analyzer Tool
+gcviewer:: Garbage Collector Logs Analyzer
+threadlogic:: Threads Dump Analyzer for Weblogic
+curl:: HTTP client in CLI mode
+perf:: OS resources performance monitoring in CLI mode
+
+
+Verification (run)
+------------------
+
+Verify that each of the following commands brings the expected result:
+
+----
+$ java -version
+$ javac -version
+$ jmeter # launches the JMeter GUI (use "jm" under CMD.EXE)
+$ mat # launches the Memory Analyzer Tool
+$ threadlogic # launches the Threads Dump Analyzer
+$ curl -I http://www.smals.be # Simple HTTP request
+$ perf # Shows system activity metrics every second, hit Ctrl+C to halt
+^C
+----
+

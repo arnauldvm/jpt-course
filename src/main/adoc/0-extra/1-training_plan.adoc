@@ -104,6 +104,16 @@ Presentations
 * link:../4-process/0-perf_test_process.html[Performance Testing Process]
 * link:../5-analysis/1-analysis_tools.html[Analysis Tools]
 
+
+Presentations
+-------------
+
+Workshops
+~~~~~~~~~
+
+* link:../1-intro/w0-install.html[Install the training toolsuite]
+
+
 Extra
 ~~~~~
 
