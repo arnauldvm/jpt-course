@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pdfsam_saved_jobs version="2.2.4" savedate="21-Oct-2015" selection="org.pdfsam.plugin.merge.GUI.MergeMainGUI">
+  <plugin class="org.pdfsam.guiclient.gui.panels.JInfoPanel" name="About"/>
+  <plugin class="org.pdfsam.plugin.mix.GUI.MixMainGUI" name="Alternate Mix">
+    <destination value=""/>
+    <step value="1"/>
+    <secondstep value="1"/>
+    <reverse_first value="false"/>
+    <reverse_second value="true"/>
+    <overwrite value="true"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+  </plugin>
+  <plugin class="org.pdfsam.plugin.merge.GUI.MergeMainGUI" name="Merge/Extract">
+    <filelist>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/0-extra/0-course_description.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/0-extra/1-training_plan.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/1-intro/0-introduction.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/1-intro/1-objectives.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/1-intro/w0-install.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/2-benchmark/1-benchmark_design.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/2-benchmark/2-benchmark_tool.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/2-benchmark/w1-first_benchmark.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/2-benchmark/w2-wrapup_benchmark.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/3-pdm/0-pdm_intro.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/0-extra/2-internals_os.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/3-pdm/1-pdm_l1-os.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/0-extra/3-internals_jvm.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/3-pdm/2-pdm_l2-jvm.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/3-pdm/3-pdm_l3-app.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/4-process/0-perf_test_process.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/build/pdf/5-analysis/1-analysis_tools.pdf" pageselection="All"/>
+    </filelist>
+    <destination value="/Users/avm/prj/jpt/jpt-course/build/pdf/jpt-bundle.pdf"/>
+    <overwrite value="true"/>
+    <merge_type value="false"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+  </plugin>
+  <plugin class="org.pdfsam.plugin.rotate.GUI.RotateMainGUI" name="Rotate">
+    <filelist/>
+    <rotation value="90"/>
+    <pages value="all"/>
+    <destination value=""/>
+    <overwrite value="true"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+    <prefix value="pdfsam_"/>
+  </plugin>
+  <plugin class="org.pdfsam.guiclient.gui.panels.JSettingsPanel" name="Settings"/>
+  <plugin class="org.pdfsam.plugin.split.GUI.SplitMainGUI" name="Split">
+    <source/>
+    <split_option/>
+    <npages value=""/>
+    <thispage value=""/>
+    <splitsize value=""/>
+    <bookmarkslevel/>
+    <destination value=""/>
+    <prefix value="pdfsam_"/>
+    <overwrite value="true"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+  </plugin>
+  <plugin class="org.pdfsam.plugin.vcomposer.GUI.VComposerMainGUI" name="Visual document composer">
+    <input-documents/>
+    <output-document/>
+    <destination value=""/>
+    <overwrite value="true"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+  </plugin>
+  <plugin class="org.pdfsam.plugin.vpagereorder.GUI.VPageReorderMainGUI" name="Visual reorder">
+    <source/>
+    <destination value=""/>
+    <overwrite value="true"/>
+    <compressed value="true"/>
+    <pdfversion value="5"/>
+  </plugin>
+</pdfsam_saved_jobs>
