@@ -35,20 +35,26 @@ Wrapup the jmeter test, based on given requirements figures
 Requirements
 ------------
 
-* The site receives XXX search requests per month.
+* The site receives 16'000'000 search requests per month.
 * It is used only during business hours.
 // 08-17
 * The vast majority of the traffic is concentrated on the first hour of the day.
   (When the developers need to decide which language they want to play with that day.)
+// Let's say 100 r/s during one hour accounts for 50% -> 360'000 request during 1h and 720'000 req/day
+// => *22 = ~16'000'000 req/month
 * Each user makes an average of 3 requests per session.
 // Poisson ?
-* Moreover, every night, external customers (about 100) run batch jobs executing between XXX and XXX requests.
+* Moreover, every night, external customers (about 100) run batch jobs executing each between 100'000 and 300'000 requests.
 // assumed to start past midnight
 // These jobs must be completed before end of night!
 // stress test, since jobs are not throttled
 // not needed to test the full duration
+// (I know that the best throughput is >1000 req/s on Dell laptop)
+// -> Assuming there is a window of 6h during the night (01h -> 07h), we can process max 21'600'000 requests,
+//    i.e. an average of 216'000 request per customer
 * The client wants the site to be fast at any time
 // What means fast? E.g. 95% < 1s
+// (I know that the response time is very good, how could I make it worse?)
 
 
 Steps
