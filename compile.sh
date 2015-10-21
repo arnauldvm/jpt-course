@@ -3,8 +3,8 @@
 srcpath="$1"
 
 srcbasedir=src/main/adoc
-tgtbasedir=build/html
-tgtpdfbasedir=build/pdf
+tgtbasedir=target/html
+tgtpdfbasedir=target/pdf
 rootdir="$(pwd)"
 
 tgtpath="$(echo "$srcpath" |
