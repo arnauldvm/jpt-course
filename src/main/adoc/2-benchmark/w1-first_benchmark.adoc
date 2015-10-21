@@ -1,0 +1,63 @@
+// build_options: 
+Java Performance Tuning - Workshop 1
+====================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v1.0, 20-Oct-2015: Initial version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
+:br: pass:[<br>]
+
+_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
+
+Content
+-------
+
+*****
+Writing your first performance test
+*****
+
+* Assignment
+* Scenario
+* Steps
+
+
+Assignment
+----------
+
+Prepare a jmeter test, based on a given scenario
+
+* establish (and reuse) session
+* verify post conditions
+* parameterize
+* collect results
+* use BeanShell
+
+
+Scenario
+--------
+
+* The tested application gives access to a database of programming languages.
+* Only authenticated user may have access to this very sensitive data.
+* One logged in, the user is presented an elaborated request form.{br}
+  (The request form shows the name of the last record visited in the current session.)
+* When the user submits his/her request, the system will display the matching record.
+
+
+Steps
+-----
+
+* compile and run app01 (cf. workshop 0)
+* test the scenario manually with your browser
+* create a new jmeter test
+* initialize your scenario using the "HTTP Test Script Recorder" and your browser (modify the proxy)
+* introduce "HTTP Request Defaults" and "HTTP Cookie Manager"
+* verify the server responses using assertions
+* introduce successively the following parameter groups:
+** environment: target host, port, protocol...
+** user information & credentials
+** test case parameters
+
+

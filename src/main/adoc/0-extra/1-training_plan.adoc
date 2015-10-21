@@ -113,6 +113,8 @@ Workshops
 ~~~~~~~~~
 
 * link:../1-intro/w0-install.html[Install the training toolsuite]
+* link:../2-benchmark/w1-first_benchmark.html[First performance test]
+* link:../2-benchmark/w2-wrapup_benchmark.html[Wrap-up the performance test]
 
 
 Extra

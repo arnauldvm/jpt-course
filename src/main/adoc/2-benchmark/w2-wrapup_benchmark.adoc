@@ -1,0 +1,75 @@
+// build_options: 
+Java Performance Tuning - Workshop 2
+====================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v1.0, 20-Oct-2015: Initial version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
+
+_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
+
+Content
+-------
+
+*****
+Wrapup your performance test
+*****
+
+* Assignment
+* Requirements
+* Steps
+
+
+Assignment
+----------
+
+Wrapup the jmeter test, based on given requirements figures
+
+* randomize parameters
+* implement several kinds of load profiles
+
+
+Requirements
+------------
+
+* The site receives XXX search requests per month.
+* It is used only during business hours.
+// 08-17
+* The vast majority of the traffic is concentrated on the first hour of the day.
+  (When the developers need to decide which language they want to play with that day.)
+* Each user makes an average of 3 requests per session.
+// Poisson ?
+* Moreover, every night, external customers (about 100) run batch jobs executing between XXX and XXX requests.
+// assumed to start past midnight
+// These jobs must be completed before end of night!
+// stress test, since jobs are not throttled
+// not needed to test the full duration
+* The client wants the site to be fast at any time
+// What means fast? E.g. 95% < 1s
+
+
+Steps
+-----
+
+Randomization
+
+* parameterize (random) users
+* parameterize (random) test case parameters
+
+[WARNING]
+====
+! variable number of requests per session{br}
+! variable length of batch jobs
+====
+
+Load profiles
+
+* determine (and _write down_) the characteristics of each of your load profiles:{br}
+  concurrent users count, number of iterations per session, duration, throughput, response times distribution...
+* parameterize thread group parameters
+* introduce (parameterized) throughput control
+* create one configuration element for each load profile
+* quickly test each load profile, and compare the metrics with the expected values.
