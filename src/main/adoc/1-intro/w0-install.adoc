@@ -151,3 +151,4 @@ $ jmeter # or "jm"
 ** The test is executed
 * Check the response by examining the "View Results Tree" panel
 
+* Terminate the app by hitting Ctrl+C in its CLI windows
