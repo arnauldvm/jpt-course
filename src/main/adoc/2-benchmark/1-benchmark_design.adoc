@@ -216,11 +216,12 @@ reference test::
 
 Measures of the UoT (&ne; measures/monitoring of the Test Harness)
 
+Instant measures: f(t)
+
 [horizontal]
 Response time:: (time response is received) - (time request was sent){br}
   _! the timestamp given in the logs may be either the time of request or the time of response,
   depending on the system_
-Throughput:: &Delta;n/&Delta;t; where n = number of transactions
 Concurrency:: count of concurrent requests at a given time{br}
   _(difficult to compute precisely: sort all timestamps (request *and* response), then travel the list while incrementing (request) / decrementing (response) a counter_
 
@@ -228,8 +229,16 @@ Concurrency:: count of concurrent requests at a given time{br}
 Performance metrics (cont'd)
 ----------------------------
 
+Interval measures: f(t, &Delta;t)
+
+[horizontal]
+Throughput:: &Delta;n/&Delta;t; where n = number of transactions
 Cumulated time:: &Sigma; response-time / &Delta;t
 Workload:: &Delta;work/&Delta;t; where work is a measure of the work accomplished (e.g. # records, file size...)
+
+Others
+
+[horizontal]
 Capacity:: how much workload the system can absorb
 Availability:: amount of time system is available / &Delta;t
 Scalability:: ability of the system to utilize more (or less) hardware to match variations of the workload (!up &ne; down)
@@ -238,16 +247,22 @@ Scalability:: ability of the system to utilize more (or less) hardware to match 
 Performance metrics statistics
 ------------------------------
 
-f(t) (e.g. response time, concurrency)
+*Instant measures*
 
-* Average
-* Min, Max
-* Percentile
+** Average
+** Min, Max
+** Percentile: Pct~n~ = X | n% of the data is <=X{br}
+(Note that median &equiv; Pct50)
 
-f(t, sampling) (calculated, e.g. throughput, cumulated time)
+Statistics can produce:
 
-* overall: sampling period = whole test duration
-* idem f(t)
+* a scalar, when calculated for the whole duration of the test
+* f(t), when calculated for each fixed interval &Delta;t
+
+*Interval measures*
+
+** only one value per interval &Delta;t -> derived 'instant' mesure, with lower resolution
+** it's possible to calculate statistics on this derived measure
 
 
 Measure window
