@@ -20,13 +20,13 @@ Content
 
 * planning your tests
 ** Unit of Test (p6)
+* load profiles
 ** Types of performance tests (p12-13)
+* metrics
 ** Performance metrics (p8-9)
 ** work organization (documents) (p17)
 
 * anatomy of a test
-* load profiles
-* metrics
 
 
 Content (bis)
@@ -80,8 +80,9 @@ Planning your test
 
 ====
 * What are we testing?
-* Why are we testing?
+//* Why are we testing?
 * Types of load profiles
+* Performance metrics
 * Documentation
 ====
 
@@ -89,7 +90,7 @@ Planning your test
 -> What are we testing?
 ----------------------
 
-WARNING
+[WARNING]
 ====
 Define carefully the limits of the system being studied.
 
@@ -103,10 +104,10 @@ Define carefully the limits of the system being studied.
 "Test Harness" = the supporting infrastructure
 
 * = system infrastructure + testing infrastructure
-* system infrastructure must be = PROD!
+* system infrastructure must be iso-PROD!{br}
   (sizing, configuration... _all pieces of hardware_!)
 
-Example? ...
+-> -> Examples ...
 
 
 Simple example of Test Harness
@@ -119,10 +120,10 @@ System infrastructure:
 
 * RP cluster (2 nodes)
 ** 2 Linux virtual servers
-* Weblogic cluster (2 sync nodes)
+* Weblogic cluster (2 sync nodes, 2 JVM's)
 ** 2 Linux virtual servers
 * Weblogic admin
-** 1 Linux virtual server
+** 1 Linux virtual server (1 JVM)
 * Database cluster (RAC)
 ** 3 Linux virtual servers
 
@@ -151,6 +152,8 @@ Testing infrastructure:
 ** VLAN
 ** Firewall?
 
+! Must be distinct from the system infrastructure!{br}
+Make sure your measure does not modify the performance of the system being tested.
 
 More complex example of Test Harness
 ------------------------------------
@@ -167,5 +170,92 @@ Let UoT = a more complex (and more realistic!) JEE system:
 -> Are we able to duplicate the world?{br}
 -> How do we make our test measures independent of the dependencies behaviour?
 
+
+-> Types of Load profiles
+-------------------------
+
+load test::
+** expected workload: the load is _under control_, in term of: # concurrent users +and+ throughput
+** focus: system meeting requirements
+stress test::
+** high workloads, saturation
+** focus: throughput and stability
+** ! impact on the rest of the infrastructure (network, firewall, RP...)
+** ! abnormal conditions, do not try to (over-)tune the response time
+** -> look for failures
+
+
+Types of Load profiles (cont'd)
+-------------------------------
+
+spike test::
+** idem stress test with more saturation and shorter duration
+** short term 
+endurance test::
+** long period of time
+** focus: stability of the response time
+
+
+-> Performance metrics
+----------------------
+
+Measures of the UoT (&ne; measures/monitoring of the Test Harness)
+
+[horizontal]
+Response time:: (time response is received) - (time request was sent){br}
+  _! the timestamp given in the logs may be either the time of request or the time of response,
+  depending on the system_
+Throughput:: &Delta;n/&Delta;t; where n = number of transactions
+Concurrency:: count of concurrent requests at a given time{br}
+  _(difficult to compute precisely: sort all timestamps (request *and* response), then travel the list while incrementing (request) / decrementing (response) a counter_
+
+
+Performance metrics (cont'd)
+----------------------------
+
+Cumulated time:: &Sigma; response-time / &Delta;t
+Workload:: &Delta;work/&Delta;t; where work is a measure of the work accomplished (e.g. # records, file size...)
+Capacity:: how much workload the system can absorb
+Availability:: amount of time system is available / &Delta;t
+Scalability:: ability of the system to utilize more (or less) hardware to match variations of the workload (!up &ne; down)
+
+
+Performance metrics statistics
+------------------------------
+
+f(t) (e.g. response time, concurrency)
+
+* Average
+* Min, Max
+* Percentile
+
+f(t, sampling) (calculated, e.g. throughput, cumulated time)
+
+* overall: sampling period = whole test duration
+* idem f(t)
+
+
+Measure window
+--------------
+
+A scalar measure (e.g. average response time) should be taken only
+over a time window where the system is in a steady state
+(i.e. metrics remain stable), typically _after_ the rampup.
+
+
+-> Documentation
+----------------
+
+* Architecture document of the UoT
+* Test plan:
+** goals
+** scope (boundaries of the UoT)
+** resources required (including key people!)
+** schedulling
+* Requirements: performance goals
+* Test protocol: process, scenarios, load profiles...
+* Test report:
+** all results (measures and calculations)
+** conclusions
 
 
