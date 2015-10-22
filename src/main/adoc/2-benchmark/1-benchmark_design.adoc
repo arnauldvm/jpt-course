@@ -255,9 +255,10 @@ image::measurement_window.png[]
 * Test plan:
 ** goals
 ** scope (boundaries of the UoT)
-** resources required (including key people!)
+** resources required (! including key people for running the test or for solving issues)
 ** schedulling
 * Requirements: performance goals
+* Test data: input data for the test scenario (! quantity and randomization)
 * Test protocol: process, scenarios, load profiles...
 * Test report:
 ** all results (measures and calculations)
