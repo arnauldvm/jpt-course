@@ -194,6 +194,10 @@ spike test::
 endurance test::
 ** long period of time
 ** focus: stability of the response time
+reference test::
+* one user
+* no delay between steps
+* many loops
 
 
 -> Performance metrics
