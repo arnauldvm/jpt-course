@@ -94,6 +94,7 @@ Test pursuing one or several of the following goals:
 * Types of load profiles
 * Performance metrics
 * Documentation
+* Process
 ====
 
 
@@ -273,5 +274,44 @@ image::measurement_window.png[]
 * Test report:
 ** all results (measures and calculations)
 ** conclusions
+
+
+-> Process
+----------
+
+* quality of inputs is key:
+** precise requirements
+** quantity and randomization of input data
+** objective and well defined scope
+* iterative process
+** design
+** test
+** analyse
+** fix
+
+(More information in link:../4-process/0-perf_test_process.html[Performance Testing Process] presentation.)
+
+
+Test results
+------------
+
+The outcome of one test loop might be any of the following:
+
+* application breaks
+* unexpected results
+* insufficient performance
+* results are OK (_sometimes..._ &#x1f609;)
+
+Cause of incorect results may have various origins:
+
+* application design / bugs
+* infrastructure configuration
+* ! testing infrastructure / test suite{br}
+=> *Test your test!*
+
+[quote, Chinese wise old man]
+_____
+Never under-estimate your own ability to make mistakes.
+_____
 
 
