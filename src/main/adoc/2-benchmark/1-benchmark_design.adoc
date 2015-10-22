@@ -15,33 +15,43 @@ _(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 Content
 -------
 
-* introduction
-** what is a performance test, objective (p4,5)
+* Introduction
+// what is a performance test, objective (p4,5)
+* Planning your tests
+// Unit of Test (p6)
+** Load profiles
+// Types of performance tests (p12-13)
+** Metrics
+// Performance metrics (p8-9)
+** Documentation
+// work organization (documents) (p17)
+** Process
+// steps (p16)
+* Anatomy of a test
+** Actors
+// actors (p20)
+** Load profiles
+** Scenarios
+** Cases
+// usage patterns - time (p22-26)
+// usage patterns - data (caching!) (p27-28)
+** Injector
 
-* planning your tests
-** Unit of Test (p6)
-* load profiles
-** Types of performance tests (p12-13)
-* metrics
-** Performance metrics (p8-9)
-** work organization (documents) (p17)
 
-* anatomy of a test
+// Test the test (p7)
+// Possible results (p15)
+// test env (vs. UoT) (p21)
+// test execution (p29-31)
+// analyse/verify results (p32-35)
 
-
-Content (bis)
--------------
-
-
-* Test the test (p7)
-* Possible results (p15)
-* Steps (p16)
-* actors (p20)
-* test env (vs. UoT) (p21)
-* usage patterns - time (p22-26)
-* usage patterns - data (caching!) (p27-28)
-* test execution (p29-31)
-* analyse/verify results (p32-35)
+// More:
+// ! _random_ parameters
+// ! randomize _before_ run
+// randomize timers
+// 
+// duration:
+// * by count or by time
+// * statistical representativeness
 
 
 Introduction
