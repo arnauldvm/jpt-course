@@ -7,14 +7,24 @@ v0.0, dd-mmm-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
+:br: pass:[<br>]
 
 _(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
 
-* anatomy of a test
+* introduction
+** what is a performance test, objective (p4,5)
+
 * planning your tests
+** Unit of Test (p6)
+** Types of performance tests (p12-13)
+** Performance metrics (p8-9)
+** work organization (documents) (p17)
+
+* anatomy of a test
 * load profiles
 * metrics
 
@@ -22,12 +32,8 @@ Content
 Content (bis)
 -------------
 
-* objective of the test (p4,17)
-* what is a performance test (p5)
-* Unit of Test (p6)
+
 * Test the test (p7)
-* Performance metrics (p8-9)
-* Types of performance tests (p12-13)
 * Possible results (p15)
 * Steps (p16)
 * actors (p20)
@@ -36,5 +42,130 @@ Content (bis)
 * usage patterns - data (caching!) (p27-28)
 * test execution (p29-31)
 * analyse/verify results (p32-35)
+
+
+Introduction
+------------
+
+====
+* References
+* What is a performance test?
+====
+
+-> Reference
+------------
+
+Performance tuning::
+* *Java Performance Tuning (training/workshop). Kirk Perdine. Kodewerk*
+   http://www.kodewerk.com/workshop.html
+
+
+-> What is a performance test?
+------------------------------
+
+Test pursuing one or several of the following goals:
+
+* assess
+** responsiveness
+** throughput
+** concurrency
+** scalability
+** stability
+* => measure the metrics and compare with expected values
+* => in case of poor performance: identify the origin
+
+
+Planning your test
+------------------
+
+====
+* What are we testing?
+* Why are we testing?
+* Types of load profiles
+* Documentation
+====
+
+
+-> What are we testing?
+----------------------
+
+WARNING
+====
+Define carefully the limits of the system being studied.
+
+*"Unit of Test" &ne; "Test Harness"*
+====
+
+"Unit of Test" (UoT) = System being studied
+
+{br}
+
+"Test Harness" = the supporting infrastructure
+
+* = system infrastructure + testing infrastructure
+* system infrastructure must be = PROD!
+  (sizing, configuration... _all pieces of hardware_!)
+
+Example? ...
+
+
+Simple example of Test Harness
+------------------------------
+
+Let UoT = a single webapp, materialized by a WAR deployable,{br}
+in a traditional infrastructure (i.e. virtualized, not containerized)
+
+System infrastructure:
+
+* RP cluster (2 nodes)
+** 2 Linux virtual servers
+* Weblogic cluster (2 sync nodes)
+** 2 Linux virtual servers
+* Weblogic admin
+** 1 Linux virtual server
+* Database cluster (RAC)
+** 3 Linux virtual servers
+
+
+Simple example of Test Harness (cont'd)
+---------------------------------------
+
+But also:
+
+* Hypervisors (ESX, or OVM, or ...)
+** Physical servers
+* VLAN
+** Routers
+** Firewalls
+* Storage units
+* Monitoring?
+
+
+Simple example of Test Harness (cont'd)
+---------------------------------------
+
+Testing infrastructure:
+
+* Injector
+** Physical server
+** VLAN
+** Firewall?
+
+
+More complex example of Test Harness
+------------------------------------
+
+Let UoT = a more complex (and more realistic!) JEE system:
+
+* sync deployable (EAR)
+* async deployable (EAR)
+* invoking several SOAP WS
+* sending/receiving messages through a messaging system (JMS, MQ...)
+* ...
+
+-> Where do we put the limits of the system?{br}
+-> Are we able to duplicate the world?{br}
+-> How do we make our test measures independent of the dependencies behaviour?
+
 
 
