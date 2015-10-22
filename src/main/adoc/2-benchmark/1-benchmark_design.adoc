@@ -54,16 +54,16 @@ Content
 // * statistical representativeness
 
 
-Introduction
-------------
+&rtri; Introduction
+-------------------
 
 ====
 * References
 * What is a performance test?
 ====
 
--> Reference
-------------
+-> References
+-------------
 
 Performance tuning::
 * *Java Performance Tuning (training/workshop). Kirk Perdine. Kodewerk*
@@ -85,8 +85,8 @@ Test pursuing one or several of the following goals:
 * => in case of poor performance: identify the origin
 
 
-Planning your test
-------------------
+&rtri; Planning your test
+-------------------------
 
 ====
 * What are we testing?
