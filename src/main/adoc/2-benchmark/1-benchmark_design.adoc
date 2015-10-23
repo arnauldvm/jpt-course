@@ -229,20 +229,20 @@ Timestamps
 
 [WARNING]
 ====
-The timestamp given in the logs may be either the time of request
-or the time of response, depending on the system!
+The timestamp given in the logs may be either the begin time (start processing request)
+or the end time (completed processing response), depending on the system!
 
 [horizontal]
 jmeter:: 
-*response time* by default (code), or {br}
-*request time* (default configuration),
+_end time_ by default in the code, but {br}
+*begin time* in the default configuration!
 
 * configurable before starting jmeter, through +sampleresult.timestamp.start+ jmeter property
 * verify with +props.get("sampleresult.timestamp.start")+ (cannot be changed at runtime)
-httpd:: *request time* by default (+%t+), {br}
+httpd:: *begin time* by default (+%t+), {br}
 configurable by using +%begin:t+ or +%end:t+ in the access log format definition
-Tomcat:: *request time*
-WebLogic:: *response time*
+Tomcat:: *begin time*
+WebLogic:: *end time*
 ====
 
 
@@ -421,7 +421,7 @@ digraph G {
 * # of concurrent users _f(t)_
 * # of concurrent sessions _f(t)_
 * throughput setpoint _f(t)_
-* duration
+* duration (time or count)
 
 
 Load profiles shapes
@@ -431,6 +431,11 @@ Load profiles shapes
 * rampup - flat
 * rampup - flat - rampdown
 * stairs
+* rampup only
 * ...
+
+
+-> Scenarios
+------------
 
 
