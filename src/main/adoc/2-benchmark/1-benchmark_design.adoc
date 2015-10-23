@@ -240,6 +240,11 @@ WebLogic:: *response time*
 ====
 
 
+Ambiguities with response times
+-------------------------------
+
+image::HTTP_ResponseTimes.png[]
+
 
 Performance metrics (cont'd)
 ----------------------------
