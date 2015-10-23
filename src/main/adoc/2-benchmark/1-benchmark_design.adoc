@@ -233,8 +233,14 @@ The timestamp given in the logs may be either the time of request
 or the time of response, depending on the system!
 
 [horizontal]
-jmeter:: *response time* by default, configurable through +sampleresult.timestamp.start+
-httpd:: *request time* by default (+%t+), configurable by using +%begin:t+ or +%end:t+
+jmeter:: 
+*response time* by default (code), or {br}
+*request time* (default configuration),
+
+* configurable before starting jmeter, through +sampleresult.timestamp.start+ jmeter property
+* verify with +props.get("sampleresult.timestamp.start")+ (cannot be changed at runtime)
+httpd:: *request time* by default (+%t+), {br}
+configurable by using +%begin:t+ or +%end:t+ in the access log format definition
 Tomcat:: *request time*
 WebLogic:: *response time*
 ====
