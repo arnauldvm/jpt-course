@@ -222,6 +222,7 @@ Instant measures: f(t)
 Response time:: (time response is received) - (time request was sent){br}
   _! the timestamp given in the logs may be either the time of request or the time of response,
   depending on the system_
+Latency:: a.k.a. "firstbyte time": (time _first_ byte of response is received) - (time first byte of request was sent){
 Concurrency:: count of concurrent requests at a given time{br}
   _(difficult to compute precisely: sort all timestamps (request *and* response), then travel the list while incrementing (request) / decrementing (response) a counter_
 
