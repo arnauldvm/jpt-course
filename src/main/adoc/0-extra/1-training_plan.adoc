@@ -67,7 +67,7 @@ AM
 ~~
 
 *****
-Investigating performance issues (cont)
+Investigating performance issues (cont'd)
 *****
 
 * PDM: Layer 3 (Application)
