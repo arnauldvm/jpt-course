@@ -44,15 +44,6 @@ Content
 // test execution (p29-31)
 // analyse/verify results (p32-35)
 
-// More:
-// ! _random_ parameters
-// ! randomize _before_ run
-// randomize timers
-// 
-// duration:
-// * statistical representativeness
-
-
 &rtri; Introduction
 -------------------
 

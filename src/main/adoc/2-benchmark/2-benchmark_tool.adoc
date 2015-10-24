@@ -33,3 +33,11 @@ Content (bis)
 * Threading model (p84-89)
 * Mock-Ups (p98-99)
 
+* Practical considerations
+** ! _random_ parameters
+*** ! randomize _before_ run
+** randomize timers
+** duration:
+*** statistical representativeness
+** caching!
+
