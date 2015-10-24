@@ -30,7 +30,9 @@ mkdir -p "$tgtpdfdir"
 build_options="$(head -1 "$srcpath" |
   perl -pe 's#^//\s*build_options:\s*(.*)\s*$#$1# or $_=""')"
 
+build_options_themed="$build_options --theme volnitsky"
+
 set -x
-asciidoc $build_options -o "$tgtpath" "$srcpath"
+asciidoc $build_options_themed -o "$tgtpath" "$srcpath"
 asciidoc $build_options -b html -a toc2! -a toc -a numbered -o - "$srcpath" | wkhtmltopdf - "$tgtpdfpath"
 
