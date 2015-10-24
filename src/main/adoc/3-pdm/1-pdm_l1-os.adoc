@@ -8,7 +8,6 @@ v0.0, dd-mmm-2015: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 
-_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
@@ -17,3 +16,4 @@ Content
 * metrics: vmstat, mpstat, memstat, lsof, JMeter Perfmon Server Agent, Windows Performance Monitor (perfmon)
 * tools: top (U*X), perfmon (Windows), custom scripts
 
+_(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_

@@ -8,15 +8,13 @@ v0.1, 24-Sep-2015: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 
-Day 1
------
+
+Day 1 - AM
+----------
 
 *****
 Writing performance tests
 *****
-
-AM
-~~
 
 * Introduction
 * _Workshop 0: install training toolsuite_
@@ -24,9 +22,13 @@ AM
 * Benchmarking tool: basics
 * _Workshop 1: write your first performance tests_
 
-[role="incremental"]
-PM
-~~
+
+Day 1 - PM
+----------
+
+*****
+Writing performance tests (cont'd)
+*****
 
 * Planning your test
 * Load profiles
@@ -35,15 +37,13 @@ PM
 * Benchmarking tool: parameters
 * _Workshop 2: wrap up your performance tests_
 
-Day 2
------
+
+Day 2 - AM
+----------
 
 *****
 Investigating performance issues
 *****
-
-AM
-~~
 
 * Reminder about OSes internals (scheduling...)
 * Reminder of some JVM internals (GC, JIT...)
@@ -52,19 +52,21 @@ AM
 * OS Monitoring tools
 * _Workshop 3 (interactive): PDM Layer 1 (OS) in practice_
 
-[role="incremental"]
-PM
-~~
+
+Day 2 - PM
+----------
+
+*****
+Investigating performance issues (cont'd)
+*****
 
 * PDM: Layer 2 (JVM)
 * JVM Monitoring tools
 * _Workshop 4 (interactive): PDM Layer 2 (JVM) in practice_
 
-Day 3
------
 
-AM
-~~
+Day 3 - AM
+----------
 
 *****
 Investigating performance issues (cont'd)
@@ -74,9 +76,9 @@ Investigating performance issues (cont'd)
 * Application Monitoring tools
 * _Workshop 5 (interactive): PDM Layer 3 (Application) in practice_
 
-[role="incremental"]
-PM
-~~
+
+Day 3 - PM
+----------
 
 *****
 Going further
@@ -94,33 +96,33 @@ Going further
 Presentations
 -------------
 
-* link:../1-intro/0-introduction.html[Introduction]
-* link:../1-intro/1-objectives.html[Objectives]
-* link:../2-benchmark/1-benchmark_design.html[Designing your benchmarks]
-* link:../2-benchmark/2-benchmark_tool.html[Benchmarking tools]
-* link:../3-pdm/0-pdm_intro.html[Performance Diagnostic Model (introduction)]
-* link:../3-pdm/1-pdm_l1-os.html[PDM Layer 1: Operating System]
-* link:../3-pdm/2-pdm_l2-jvm.html[PDM Layer 2: Java Virtual Machine]
-* link:../3-pdm/3-pdm_l3-app.html[PDM Layer 3: Application]
-* link:../4-process/0-perf_test_process.html[Performance Testing Process]
-* link:../5-analysis/1-analysis_tools.html[Analysis Tools]
+* link:../1-intro/0-introduction.html#_content[Introduction]
+* link:../1-intro/1-objectives.html#_content[Objectives]
+* link:../2-benchmark/1-benchmark_design.html#_content[Designing your benchmarks]
+* link:../2-benchmark/2-benchmark_tool.html#_content[Benchmarking tools]
+* link:../3-pdm/0-pdm_intro.html#_content[Performance Diagnostic Model (introduction)]
+* link:../3-pdm/1-pdm_l1-os.html#_content[PDM Layer 1: Operating System]
+* link:../3-pdm/2-pdm_l2-jvm.html#_content[PDM Layer 2: Java Virtual Machine]
+* link:../3-pdm/3-pdm_l3-app.html#_content[PDM Layer 3: Application]
+* link:../4-process/0-perf_test_process.html#_content[Performance Testing Process]
+* link:../5-analysis/1-analysis_tools.html#_content[Analysis Tools]
 
-
-Presentations
--------------
 
 Workshops
-~~~~~~~~~
+---------
 
-* link:../1-intro/w0-install.html[Install the training toolsuite]
-* link:../2-benchmark/w1-first_benchmark.html[First performance test]
-* link:../2-benchmark/w2-wrapup_benchmark.html[Wrap-up the performance test]
+* link:../1-intro/w0-install.html#_content[Install the training toolsuite]
+* link:../2-benchmark/w1-first_benchmark.html#_content[First performance test]
+* link:../2-benchmark/w2-wrapup_benchmark.html#_content[Wrap-up the performance test]
+* link:../3-pdm/w3-pdm_l1-os.html#_content[PDM Layer 1 (OS) in practice]
+* link:../3-pdm/w4-pdm_l2-jvm.html#_content[PDM Layer 2 (JVM) in practice]
+* link:../3-pdm/w5-pdm_l3-app.html#_content[PDM Layer 3 (Application) in practice]
 
 
-Extra
-~~~~~
+Extras
+------
 
-* link:../0-extra/0-course_description.html[Course Description]
-* link:../0-extra/2-internals_os.html[Operating Systems Internals]
-* link:../0-extra/3-internals_jvm.html[Java VM Internals]
+* link:../0-extra/0-course_description.html#_content[Course Description]
+* link:../0-extra/2-internals_os.html#_content[Operating Systems Internals]
+* link:../0-extra/3-internals_jvm.html#_content[Java VM Internals]
 

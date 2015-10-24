@@ -8,12 +8,13 @@ v0.0, dd-mmm-2015: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 
-_(link:../extra/training_plan.html#(5)[back to plan])_
 
 Content
 -------
 
 * Process for SIC@Smals
+
+_(link:../extra/training_plan.html#_presentations[back to course plan])_
 
 
 Content (bis)

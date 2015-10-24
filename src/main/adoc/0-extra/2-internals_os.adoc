@@ -8,7 +8,6 @@ v0.0.1, 28-Sep-2014: Draft version
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 
-_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
@@ -16,6 +15,8 @@ Content
 * References
 * Schedulling
 * others?
+
+_(link:../0-extra/1-training_plan.html#_extras[back to course plan])_
 
 References
 ----------

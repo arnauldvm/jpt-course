@@ -17,7 +17,6 @@ v0.0.1, 24-Sep-2014: Draft version
 :tabletags-red.bodydata: <td style="background-color:indianred;text-align:center">|</td>
 :tabledef-default.red-style: tags="red"
 
-_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
@@ -27,6 +26,8 @@ Content
 * The four layers model
 * Decision Tress
  
+_(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
 
 Objective
 ---------

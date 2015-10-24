@@ -10,7 +10,6 @@ v0.1, 12-Oct-2015: Initial version
 :icons:
 :br: pass:[<br>]
 
-_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
@@ -37,6 +36,7 @@ Content
 // usage patterns - data (caching!) (p27-28)
 ** Injector
 
+_(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
 // Test the test (p7)
 // Possible results (p15)

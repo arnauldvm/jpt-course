@@ -9,7 +9,6 @@ v1.0, 20-Oct-2015: Initial version
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 :icons:
 
-_(link:../0-extra/1-training_plan.html#(5)[back to plan])_
 
 Content
 -------
@@ -21,6 +20,8 @@ Wrapup your performance test
 * Assignment
 * Requirements
 * Steps
+
+_(link:../0-extra/1-training_plan.html#_workshops[back to course plan])_
 
 
 Assignment
