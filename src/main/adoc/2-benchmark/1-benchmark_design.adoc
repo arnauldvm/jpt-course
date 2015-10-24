@@ -207,7 +207,7 @@ reference test::
 
 Measures of the UoT (&ne; measures/monitoring of the Test Harness)
 
-Instant measures: f(t)
+*Instant measures: f(t)*
 
 [horizontal]
 Response time:: (time _last_ byte of response is received) - (time first byte of request was sent){br}
@@ -246,14 +246,14 @@ image::HTTP_ResponseTimes.png[]
 Performance metrics (cont'd)
 ----------------------------
 
-Interval measures: f(t, &Delta;t)
+*Interval measures: f(t, &Delta;t)*
 
 [horizontal]
 Throughput:: &Delta;n/&Delta;t; where n = number of transactions
 Cumulated time:: &Sigma; response-time / &Delta;t
 Workload:: &Delta;work/&Delta;t; where work is a measure of the work accomplished (e.g. # records, file size...)
 
-Others
+*Others*
 
 [horizontal]
 Capacity:: how much workload the system can absorb
