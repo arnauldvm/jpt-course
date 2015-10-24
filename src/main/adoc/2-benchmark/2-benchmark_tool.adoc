@@ -15,7 +15,7 @@ Content
 * <<_rtri_requirements,Requirements>>
 // GUI (heavy client) testing (p38-41)
 // Regression testing (p42)
-* market overview
+* <<_rtri_market_overview,Market overview>>
 // injectors (p37)
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * jmeter
@@ -83,5 +83,28 @@ Kinds of testing tools
 ** closer to micro-benchmarking
 ** e.g. JUnit
 
+
+&rtri; Market Overview
+----------------------
+
+OpenSource software:
+
+* *JMeter*: extended GUI, many protocols, scenario = XML tree
+* Gatling: scenario = Groovy code
+* Grinder: distributed testing with many injectors
+* ...
+
+Commercial software:
+
+* HP LoadRunner (very complex)
+* IBM Rational Performance Tester
+* Borland Silk Performer
+* ...
+
+Commercial online services (cloud based):
+
+* BlazeMeter
+* Blitz
+* ...
 
 
