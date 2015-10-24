@@ -505,3 +505,12 @@ One traversal of the scenario path requires a set of parameter values to feed th
 A good performance test requires lots of carefully randomized input data.
 
 -> Extracts of the actual databases.
+
+
+-> Injector
+-----------
+
+An injector is a tool that is able to _reproducibly_ generate a _well-defined_ load.
+
+_(See link:2-benchmark_tool.html#_content[next chapter].)_
+
