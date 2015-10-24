@@ -14,31 +14,32 @@ Content
 
 * requirements
 * market overview
+// injectors (p37)
+// GUI (heavy client) testing (p38-41)
+// Regression testing (p42)
+// Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * jmeter
 ** basics
+// Jmeter ... (pp45...83, 89...97)
 ** threading model
+// Threading model (p84-89)
 ** timers
 ** parameters
+* Mock-Ups
+// (p98-99)
+* Practical considerations
+** Randomization
+// ! _random_ parameters
+// ! randomize _before_ run
+// randomize timers
+** duration
+// statistical representativeness
+** caching!
+// p27-28
+** https://regex101.com
+* analysing/graphing/reporting...
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
 
-Content (bis)
--------
-
-* injectors (p37)
-* GUI (heavy client) testing (p38-41)
-* Regression testing (p42)
-* Standard APi testing (p43-44) + Gattling, LoadRunner ...
-* Jmeter ... (pp45...83, 89...97)
-* Threading model (p84-89)
-* Mock-Ups (p98-99)
-
-* Practical considerations
-** ! _random_ parameters
-*** ! randomize _before_ run
-** randomize timers
-** duration:
-*** statistical representativeness
-** caching!
 
