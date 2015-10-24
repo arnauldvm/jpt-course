@@ -50,7 +50,6 @@ Content
 // randomize timers
 // 
 // duration:
-// * by count or by time
 // * statistical representativeness
 
 
@@ -421,7 +420,9 @@ digraph G {
 * # of concurrent users _f(t)_
 * # of concurrent sessions _f(t)_
 * throughput setpoint _f(t)_
-* duration (time or count)
+* duration:
+** as an amount of time; or
+** as a transactions count
 
 
 Load profiles shapes
