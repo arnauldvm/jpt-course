@@ -489,6 +489,7 @@ digraph G {
 
 _Weights may be infered from relative load requirements._
 
+
 -> Cases
 --------
 
@@ -502,3 +503,5 @@ One traversal of the scenario path requires a set of parameter values to feed th
 =====
 
 A good performance test requires lots of carefully randomized input data.
+
+-> Extracts of the actual databases.
