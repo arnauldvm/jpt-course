@@ -7,6 +7,7 @@ v0.1, 24-Sep-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:br: pass:[<br>]
 
 
 Day 1 - AM
@@ -45,9 +46,8 @@ Day 2 - AM
 Investigating performance issues
 *****
 
-* Reminder about OSes internals (scheduling...)
-* Reminder of some JVM internals (GC, JIT...)
-* Performance Diagnostic Model (PDM): Introduction
+* Performance Diagnostic Model (PDM): Introduction{br}&nbsp;
+* &target; Reminder about OSes internals (scheduling...)
 * PDM: Layer 1 (OS)
 * OS Monitoring tools
 * _Workshop 3 (interactive): PDM Layer 1 (OS) in practice_
@@ -61,6 +61,7 @@ Investigating performance issues (cont'd)
 *****
 
 * PDM: Layer 2 (JVM)
+* &target; Reminder of some JVM internals (GC, JIT...)
 * JVM Monitoring tools
 * _Workshop 4 (interactive): PDM Layer 2 (JVM) in practice_
 
