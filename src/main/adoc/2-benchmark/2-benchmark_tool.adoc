@@ -12,11 +12,11 @@ v0.0, dd-mmm-2015: Draft version
 Content
 -------
 
-* requirements
-* market overview
-// injectors (p37)
+* <<_rtri_requirements,Requirements>>
 // GUI (heavy client) testing (p38-41)
 // Regression testing (p42)
+* market overview
+// injectors (p37)
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * jmeter
 ** basics
@@ -40,6 +40,24 @@ Content
 * analysing/graphing/reporting...
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+&rtri; Requirements
+-------------------
+
+An injector is a tool that is able to _reproducibly_ generate a _well-defined_ load.
+
+* Submit (receive) any kind of HTTP request (response)
+* Submit other kind of requests (JDBC, RMI, (SOAP), execute Java code for specific cases)
+* Represent complex scenario logic 
+* Management of high number of virtual users
+* _'Parameterizable'_
+* Recording of results
+
+Optional:
+
+* real time display
+* analysis, reporting
 
 
 
