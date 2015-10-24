@@ -11,6 +11,26 @@ $ brew install source-highlight
 $ brew install fswatch # optional
 -----
 
+Fix Asciidoc / Slidy:
+edit <asciidoc_install_home>/etc/asciidoc/javascripts/slidy.js@1276
+change this:
+-----
+    for (i = 0; i < slides.length; ++i)
+    {
+      if (slides[i] == target)
+        return i;  // success
+    }
+-----
+into this:
+-----
+    for (i = 0; i < this.slides.length; ++i)
+    {
+      if (this.slides[i] == target)
+        return i;  // success
+    }
+-----
+
+
 Automatic compilation while editing (optional)
 
 -----
