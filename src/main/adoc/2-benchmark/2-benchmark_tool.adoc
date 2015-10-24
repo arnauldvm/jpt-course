@@ -60,4 +60,28 @@ Optional:
 * analysis, reporting
 
 
+Kinds of testing tools
+----------------------
+
+[type="asciidoc",cols="^10,^1,^10,^1,^10",grid="none",frame="none"]
+|=====
+|GUI testing
+|>
+|*Protocol level testing*
+|>
+|Unit testing
+|=====
+
+* GUI testing
+** fragile
+** e.g. FAT client testing
+* *Protocol (or API) level testing*
+** HTTP, FTP, SOAP, SMTP, JDBC...
+** robust, good isolation level -> best for performance testing
+** e.g. web based
+* Unit testing = Non-regression testing
+** closer to micro-benchmarking
+** e.g. JUnit
+
+
 
