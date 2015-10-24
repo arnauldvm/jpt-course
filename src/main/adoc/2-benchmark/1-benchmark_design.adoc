@@ -31,9 +31,9 @@ Content
 ** Actors
 // actors (p20)
 ** Load profiles
+// usage patterns - time (p22-26)
 ** Scenarios
 ** Cases
-// usage patterns - time (p22-26)
 // usage patterns - data (caching!) (p27-28)
 ** Injector
 
@@ -439,4 +439,65 @@ Load profile requirements
 -> Scenarios
 ------------
 
+A scenario is a description of a usage pattern.
+There are possibly several scenarios for a given system.
 
+* a scenario is a list of consecutive steps
+* one step may correspond to several HTTP requests:
+** static resources (images, css, js...){br}
+_Do we want to simulate these? Often we assume they are cached by the browser, hence we ignore them. But it might not be the case!_
+** AJAX calls
+* there might be several _paths_ of actions possible in one scenario
+
+
+Multiple paths in a scenario
+----------------------------
+
+Example:
+
+* home -> list of cases -> process the case -> logout
+* home -> list of cases -> logout
+* home -> status page -> logout
+
+_Moreover, it is frequent that the logout page is never hit, or that a user exits the application in the middle of a workflow!_
+
+* It is very hard to predict all possible paths, even with usage logs.
+* We don't want to write a separate scenario for every possible path.
+
+
+Multiple paths in a scenario
+----------------------------
+
+To solve this we can use a statistical approach:
+
+[graphviz]
+-----
+digraph G {
+  size = "7,4";
+  node [shape=none];
+
+  { rank=same; rankdir=LR; home; list; process; logout }
+  home -> list [label="90%"]
+    list -> logout [label="25%"]
+    list -> process [label="75%"]
+      process -> logout
+  home -> status [label="10%"]
+    status -> logout
+}
+-----
+
+_Weights may be infered from relative load requirements._
+
+-> Cases
+--------
+
+One traversal of the scenario path requires a set of parameter values to feed the HTTP requests (e.g. the identifier of the case to process in the previous example).
+
+[WARNING]
+=====
+* variety must be equivalent to the actual usage in production
+* Re-using same parameter values often results in too many cache hits{br}
+=> faster than normal system, too optimistic results!
+=====
+
+A good performance test requires lots of carefully randomized input data.
