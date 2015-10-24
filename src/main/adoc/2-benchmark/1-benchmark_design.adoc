@@ -14,9 +14,9 @@ v0.1, 12-Oct-2015: Initial version
 Content
 -------
 
-* Introduction
+* <<_rtri_introduction,Introduction>>
 // what is a performance test, objective (p4,5)
-* Planning your tests
+* <<_rtri_planning_your_test,Planning your test>>
 // Unit of Test (p6)
 ** Load profiles
 // Types of performance tests (p12-13)
@@ -26,7 +26,7 @@ Content
 // work organization (documents) (p17)
 ** Process
 // steps (p16)
-* Anatomy of a test
+* <<_rtri_anatomy_of_a_test,Anatomy of a test>>
 ** Actors
 // actors (p20)
 ** Load profiles
@@ -43,6 +43,7 @@ _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 // test env (vs. UoT) (p21)
 // test execution (p29-31)
 // analyse/verify results (p32-35)
+
 
 &rtri; Introduction
 -------------------
