@@ -356,6 +356,7 @@ JMeter - Variables & Properties
 * Set from the command line: +-Jproperty_name=property_value+
 * Copy in variable: +$\{__P(property_name, default_value)}+
 * A property usually contains a String, but may contain any kind of Object.
+* The "Non-Test Element" *Property Display* may be added to the *WorkBench* special node as a handy way of checking propertie values
 
 
 JMeter expressions & functions
