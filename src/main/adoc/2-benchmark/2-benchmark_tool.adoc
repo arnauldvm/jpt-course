@@ -128,3 +128,11 @@ image::jmeter-images/jmeter.jpg[]
 * Many plugins (http://jmeter-plugins.org/)
 
 
+JMeter - Modes
+--------------
+
+* GUI -> development, testing of the script
+* command-line -> scripted execution
+* distributed (servers (slave) + one controller)
+
+
