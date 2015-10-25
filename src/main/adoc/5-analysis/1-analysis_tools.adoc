@@ -16,5 +16,5 @@ Content
 * Report Generator ?
 * Hyperion ?
 
-_(link:../extra/training_plan.html#_presentations[back to course plan])_
+_(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
