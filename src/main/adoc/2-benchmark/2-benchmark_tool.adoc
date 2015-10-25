@@ -7,7 +7,9 @@ v0.1, 25-Oct-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
 :br: pass:[<br>]
+:nil: pass:[</>]
 
 
 Content
@@ -20,12 +22,11 @@ Content
 // injectors (p37)
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * <<_rtri_jmeter,JMeter>>
-** basics
 // Jmeter ... (pp45...83, 89...97)
-** threading model
+** Structure
+** Lifecycle
+** Components
 // Threading model (p84-89)
-** timers
-** parameters
 * Mock-Ups
 // (p98-99)
 * Practical considerations
@@ -126,7 +127,7 @@ image::jmeter-images/jmeter.jpg[]
 ** Mail - SMTP(S), POP3(S) and IMAP(S)
 ** Native commands or shell scripts
 ** TCP
-* Many plugins (http://jmeter-plugins.org/)
+* Many plugins (especially http://jmeter-plugins.org/)
 
 
 JMeter - Modes
@@ -262,3 +263,123 @@ digraph G {
 -----
 
 
+JMeter - Controllers
+--------------------
+
+[horizontal]
+Once Only Controller:: executed only at the first iteration
+Loop Controller:: repeat n times (or forever) -> iterations
+If Controller:: conditional
+Switch Controller:: alternative
+
+
+NOTE: each Thread Group is an implicit Loop Controller at the same time
+
+
+JMeter - Configuration elements
+-------------------------------
+
+[horizontal]
+User Defined Variables:: Defines a set of variables with fixed values.
+CSV Data Set Config:: Defines variables that will change at each _iteration_.
+HTTP Request Defaults:: predefine parts of the request, like host, port, protocol...
+HTTP Cookie Manager:: automatic management of cookies
+
+
+JMeter - Timers
+---------------
+
+[horizontal]
+Random Timers:: simulate end-user "think time"
+Constant Throughput Timer:: "flat" throughput (but setpoint maybe changed at any time during execution...)
+jp{nil}@{nil}gc - Throughput Shaping Timer:: variable throughput
+BeanShell Timer:: explicit computing of the time
+
+[WARNING]
+=====
+Throughput timers may not work well in extreme conditions (very high or very low throughput).
+
+-> *BeanShell Timer* with your own logic
+=====
+
+
+JMeter - Samplers
+-----------------
+
+[horizontal]
+HTTP Request:: most often used
+BeanShell Sampler:: e.g. when you need to use a specific SOAP client (cf. SOAP security)
+JDBC Request:: calling a DB
+Debug Sampler:: generate a "dummy" sample with all variables and properties values, very usefull for debugging
+
+
+JMeter - Assertions
+-------------------
+
+* Listeners will collect information about each sampler execution
+* Each listener is also able to ouput results to a file (CSV or XML format)
+* When generating statistics, listeners will group samples that have the same "label"
+  (independantly from the originating sampler)
+
+[horizontal]
+Response Assertion:: verify any part of the HTTP response, including the body
+XPath Assertion:: sometimes more precise, especially for SOAP
+BeanShell Assertion:: for more complex verifications
+
+
+JMeter - Listeners
+------------------
+
+_____
+[horizontal]
+Aggregate Report:: give a few statistics on each sampler -> ideal for saving the results (enter a filename)
+View Results Tree:: all request and all responses, very usefull for debugging, but huge memory impact => always remember to disable!
+jp{nil}@{nil}gc - Active Threads Over Time:: threads count over time, usefull for debugging to verify that the load profile is correct
+jp{nil}@{nil}gc - Transactions per Second:: throuhgput over time, usefull for debugging to verify that the load profile is correct
+_____
+
+
+* In GUI mode, Listeners are able to re-read a saved results file and re-draw / re-calculte the stats
+
+
+JMeter - Variables & Properties
+-------------------------------
+
+*Variables*
+
+* Each thread gets its own set of variables.
+* A variable usually contains a String, but may contain any kind of Object.
+
+*Properties*
+
+* Shared by all threads.
+* Set from the command line: +-Jproperty_name=property_value+
+* Copy in variable: +$\{__P(property_name, default_value)}+
+* A property usually contains a String, but may contain any kind of Object.
+
+
+JMeter expressions & functions
+------------------------------
+
+*Expressions*
+
+[horizontal]
+value of a variable:: +$\{variable_name}+
+function call:: +$\{__function_name(att1, att2, ..., attn)}+
+implicit concatenation:: e.g. +file_$\{var}.txt+
+
+*Functions*
+
+[horizontal]
+property value:: +$\{__P(property_name, default_value)}+
+thread number:: +$\{__threadNum}+
+uuid:: +$\{__UUID}+
+timestamp:: +$\{__time(YMDHMS)}+
+
+
+BeanShell
+---------
+
+* Accepts Java-like syntax _(limited to features present in version 4 of Java syntax!)_
+* Has acces to any Java classes, methods, and members
+* Very powerful but may be hard to debug
