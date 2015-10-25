@@ -80,3 +80,12 @@ Load profiles
 * introduce (parameterized) throughput control
 * create one configuration element for each load profile
 * quickly test each load profile, and compare the metrics with the expected values.
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

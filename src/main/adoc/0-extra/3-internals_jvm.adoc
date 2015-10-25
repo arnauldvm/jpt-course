@@ -662,3 +662,11 @@ JIT: Origin
 
 -> solution: JIT (HotSpot)
 
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

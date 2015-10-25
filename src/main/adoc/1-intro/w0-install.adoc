@@ -153,3 +153,12 @@ $ jmeter # or "jm"
 * Check the response by examining the "View Results Tree" panel
 
 * Terminate the app by hitting Ctrl+C in its CLI windows
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

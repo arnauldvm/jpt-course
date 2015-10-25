@@ -514,3 +514,11 @@ An injector is a tool that is able to _reproducibly_ generate a _well-defined_ l
 
 _(See link:2-benchmark_tool.html#_content[next chapter].)_
 
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

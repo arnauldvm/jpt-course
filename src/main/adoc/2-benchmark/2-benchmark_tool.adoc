@@ -445,3 +445,12 @@ i.e. a component that has the same surface signature, but does not achieve actua
 ** randomization of returned data
 ** randomization of response time
 ** consistent behaviour
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====
