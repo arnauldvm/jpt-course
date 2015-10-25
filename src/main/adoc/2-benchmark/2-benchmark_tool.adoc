@@ -180,7 +180,7 @@ JMeter - Lifecycle
 -----
 digraph G {
   size = "9,9";
-  splines=polyline;
+  splines="line";
   node[shape=box];
   edge[weight=2];
 
@@ -219,10 +219,10 @@ digraph G {
     steps[shape=record label="{<f1> Step 1|...|Step n}" style=filled fillcolor=lightpink]
     p1_2 -> p1_1 [weight=1 dir=back]
     p1_0 -> p1_1 [dir=back arrowtail=none]
-    test1:e -> p1_0 [weight=1 arrowhead=none]
+    test1:e -> p1_0 [weight=1 label="next iteration" arrowhead=none]
     { rank=same; test1; p1_0 }
     { rank=same; p1_1; p1_2 }
-    test1 -> done1
+    test1 -> done1 [label="thread completed"]
 
     test1[label="?", shape=diamond]
     begin1[label="",shape=circle]
