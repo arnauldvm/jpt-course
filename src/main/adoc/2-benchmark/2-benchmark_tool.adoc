@@ -7,6 +7,7 @@ v0.0, dd-mmm-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:br: pass:[<br>]
 
 
 Content
@@ -134,5 +135,24 @@ JMeter - Modes
 * GUI -> development, testing of the script
 * command-line -> scripted execution
 * distributed (servers (slave) + one controller)
+
+
+JMeter - Components
+-------------------
+
+[horizontal]
+image:jmeter-images/beaker.gif[height=28] Test Plan:: the whole
+image:jmeter-images/testtubes.png[height=28] Configuration Elements:: management of variable parameters
+&nbsp; -> Properties:: global scope (shared by all threads)
+&nbsp; -> Variables:: thread scope (visible only inside a thread)
+image:jmeter-images/thread.gif[height=28] Thread Groups:: virtual users
+image:jmeter-images/timer.gif[height=28] Timers:: introduce variable delays -> control of the throughput
+image:jmeter-images/knob.gif[height=28] Logic Controllers:: conditional, loop, switch...
+image:jmeter-images/pipet.png[height=28] Samplers:: execution of a request for various protocols{br}
+  -> This is the _lowest level of granularity for the measures_
+image:jmeter-images/leafnode.gif[height=28] image:jmeter-images/leafnodeflip.gif[height=28] Pre/Post-processors:: additional processing before/after sampler{br}
+  -> (for preparation of request / analysis of response)
+image:jmeter-images/question.gif[height=28] Assertions:: describe success conditions
+image:jmeter-images/meter.png[height=28] Listeners:: collect the metrics
 
 
