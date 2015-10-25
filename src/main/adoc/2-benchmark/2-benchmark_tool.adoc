@@ -331,6 +331,7 @@ JMeter - Assertions
 * Each listener is also able to ouput results to a file (CSV or XML format)
 * When generating statistics, listeners will group samples that have the same "label"
   (independantly from the originating sampler)
+* Useful link for testing regular expressions: https://regex101.com
 
 [horizontal]
 Response Assertion:: verify any part of the HTTP response, including the body
