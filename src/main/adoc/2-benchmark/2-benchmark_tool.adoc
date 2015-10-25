@@ -156,3 +156,20 @@ image:jmeter-images/question.gif[height=28] Assertions:: describe success condit
 image:jmeter-images/meter.png[height=28] Listeners:: collect the metrics
 
 
+JMeter - Tree
+-------------
+
+[style="asciidoc",cols="<2,<1",grid="none",frame="none"]
+|=====
+|All element are arranged as an ordered tree.
+
+* *Thread Groups*, *Logic Controller* and *Samplers*{br}
+  -> form the execution flow, hence their order is important.
+* *Configuration Elements*, *Timers*, *Post/Pre-processors*, *Assertions*, *Listeners* {br}
+  -> replicate their behavior to all elements in their scope (i.e. in the subtree delimited by their parent)
+
+|
+image::sample_jmeter_tree.png[width="75%"]
+|=====
+
+
