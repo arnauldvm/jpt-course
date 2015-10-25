@@ -23,23 +23,22 @@ Content
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * <<_rtri_jmeter,JMeter>>
 // Jmeter ... (pp45...83, 89...97)
-** Structure
-** Lifecycle
-** Components
+** <<_jmeter_structure,Structure>>
+** <<_jmeter_lifecycle,Lifecycle>>
+** <<_jmeter_components,Components>>
 // Threading model (p84-89)
-* Mock-Ups
-// (p98-99)
-* Practical considerations
-** Randomization
+* <<_randomization,Randomization>>
 // ! _random_ parameters
 // ! randomize _before_ run
 // randomize timers
-** duration
+//** duration
 // statistical representativeness
-** caching!
+//** caching!
 // p27-28
-** https://regex101.com
+//** https://regex101.com
 * analysing/graphing/reporting...
+* Mock-Ups
+// (p98-99)
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
@@ -138,8 +137,10 @@ JMeter - Modes
 * distributed (servers (slave) + one controller)
 
 
-JMeter - Components
+JMeter - Structure
 -------------------
+
+A JMeter Test Plan is a tree of different kind of components:
 
 [horizontal]
 image:jmeter-images/beaker.gif[height=28] Test Plan:: the whole
@@ -263,15 +264,8 @@ digraph G {
 -----
 
 
-JMeter - Scenario recording
----------------------------
-
-* The pseudo-component *HTTP(S) Test Script Recorder* may be added to the *WorkBench* special node
-* It acts as an HTTP proxy which forwards all HTTP requests on the fly
-  and creates corresponging jmeter elements at the same time
-* You must adapt your browser proxy parameters
-* You must select a target controller in your jmeter script
-* Use include/exclude patterns to keep only what you need
+JMeter - Components
+-------------------
 
 
 JMeter - Controllers
@@ -282,7 +276,6 @@ Once Only Controller:: executed only at the first iteration
 Loop Controller:: repeat n times (or forever) -> iterations
 If Controller:: conditional
 Switch Controller:: alternative
-
 
 NOTE: each Thread Group is an implicit Loop Controller at the same time
 
@@ -352,6 +345,17 @@ _____
 
 
 * In GUI mode, Listeners are able to re-read a saved results file and re-draw / re-calculte the stats
+
+
+JMeter - Scenario recording
+---------------------------
+
+* The pseudo-component *HTTP(S) Test Script Recorder* may be added to the *WorkBench* special node
+* It acts as an HTTP proxy which forwards all HTTP requests on the fly
+  and creates corresponging jmeter elements at the same time
+* You must adapt your browser proxy parameters
+* You must select a target controller in your jmeter script
+* Use include/exclude patterns to keep only what you need
 
 
 JMeter - Variables & Properties
