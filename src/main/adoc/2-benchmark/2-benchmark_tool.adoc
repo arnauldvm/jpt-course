@@ -173,3 +173,92 @@ image::sample_jmeter_tree.png[width="75%"]
 |=====
 
 
+JMeter - Lifecycle
+------------------
+
+[graphviz]
+-----
+digraph G {
+  size = "9,9";
+  splines=polyline;
+  node[shape=box];
+  edge[weight=2];
+
+  subgraph cluster_0 {
+    label = "Test Plan"
+
+    begin0 -> setup -> test0
+    p_seq -> test0:w [dir=back taillabel="sequential" arrowtail=none]
+    test0:e -> p_par [headlabel="parallel" arrowhead=none]
+    p_seq -> main_seq
+    p_par -> main_par
+    { rank=same; p_seq; test0; p_par }
+    main_seq -> teardown
+    main_par -> teardown
+    { rank=same; main_seq; main_par }
+    teardown -> done0
+    setup[shape=record,label="{setUp Thread Group 1|...|setUp Thread Group N}"]
+    main_seq[shape=record label="{Thread Group 1|...|Thread Group N}" style=filled fillcolor=palegreen]
+    main_par[shape=record label="Thread\nGroup 1|...|Thread\nGroup N" style=filled fillcolor=palegreen]
+    teardown[shape=record label="{tearDown Thread Group 1|...|tearDown Thread Group N}"]
+
+    test0[label="?", shape=diamond]
+    begin0 [label="" shape=circle]
+    done0 [label="" shape=circle style=filled]
+    p_seq [width=0 shape=point label=""]
+    p_par [width=0 shape=point label=""]
+  }
+
+  subgraph cluster_1 {
+    label = "Thread"
+    style = filled
+    fillcolor = palegreen
+
+    begin1 -> p1_2 [arrowhead=none]
+    p1_2 -> steps -> test1
+    steps[shape=record label="{<f1> Step 1|...|Step n}" style=filled fillcolor=lightpink]
+    p1_2 -> p1_1 [weight=1 dir=back]
+    p1_0 -> p1_1 [dir=back arrowtail=none]
+    test1:e -> p1_0 [weight=1 arrowhead=none]
+    { rank=same; test1; p1_0 }
+    { rank=same; p1_1; p1_2 }
+    test1 -> done1
+
+    test1[label="?", shape=diamond]
+    begin1[label="",shape=circle]
+    done1[label="" shape=circle style=filled]
+    p1_0 [width=0 shape=point label=""]
+    p1_1 [width=0 shape=point label=""]
+    p1_2 [width=0 shape=point label=""]
+  }
+
+  subgraph cluster_2 {
+    label = "1 step"
+    style = filled
+    fillcolor = lightpink
+
+    begin2 -> "Configuration elements" -> "Pre-Processors" -> Timers -> Sampler
+
+    Sampler [penwidth=2 fontsize=20 style="bold filled" style=filled fillcolor=lightblue]
+    test2:e -> p2_0 [weight=1 headlabel="SampleResult\nis null" arrowhead=none]
+    { rank=same; test2; p2_0 }
+    p2_0 -> p2_1 [arrowhead=none]
+    p2_1 -> done2 [weight=1]
+    { rank=same; done2; p2_1 }
+    test2 -> "Post-Processors" [label=" no"]
+    "Post-Processors" -> Assertions -> Listeners -> done2
+
+    Sampler -> test2
+
+    test2[label="?" shape=diamond]
+    begin2[label="",shape=circle]
+    done2[label="" shape=circle style=filled]
+    p2_0 [width=0 shape=point label=""]
+    p2_1 [width=0 shape=point label=""]
+    p2_2 [width=0 shape=point label=""]
+    p2_3 [width=0 shape=point label=""]
+  }
+}
+-----
+
+
