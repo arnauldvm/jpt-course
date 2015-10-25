@@ -18,7 +18,7 @@ Content
 * <<_rtri_market_overview,Market overview>>
 // injectors (p37)
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
-* jmeter
+* <<_rtri_jmeter,JMeter>>
 ** basics
 // Jmeter ... (pp45...83, 89...97)
 ** threading model
@@ -106,5 +106,25 @@ Commercial online services (cloud based):
 * BlazeMeter
 * Blitz
 * ...
+
+
+&rtri; JMeter
+-------------
+
+image::jmeter-images/jmeter.jpg[]
+
+* image:jmeter-images/icon-apache.png[] Apache project: https://jmeter.apache.project
+* 100% Java
+* Many protocols:
+** Web - HTTP, HTTPS
+** SOAP / REST
+** FTP
+** Database via JDBC, MongoDB (NoSQL)
+** LDAP
+** Message-oriented middleware (MOM) via JMS
+** Mail - SMTP(S), POP3(S) and IMAP(S)
+** Native commands or shell scripts
+** TCP
+* Many plugins (http://jmeter-plugins.org/)
 
 
