@@ -37,7 +37,7 @@ Content
 // p27-28
 //** https://regex101.com
 * <<_advanced_data_analysis,Advanced Data Analysis>>
-* Mock-Ups
+* <<_mock_ups,Mock-Ups>>
 // (p98-99)
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
@@ -427,3 +427,21 @@ Advanced Data Analysis
 ** use a statistics computing tool -> recommended
 *** For example: R (https://www.r-project.org/) {br}
     Very powerfull and versatile, but it takes a bit of time to get the hang of it.
+
+
+Mock-Ups
+-------
+
+* There are times some dependencies cannot be used during performance tests:
+** Too many subdependencies
+** External service
+** Modification of PROD data
+* Or you might want to simulate a particular condition:
+** What if the dependency becomes extremely slow?
+* The solution to those situations is to build a *mock-up*,
+i.e. a component that has the same surface signature, but does not achieve actual processing.
+* This is a complex task:
+** what should be done with input parameters?
+** randomization of returned data
+** randomization of response time
+** consistent behaviour
