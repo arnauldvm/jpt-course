@@ -263,6 +263,17 @@ digraph G {
 -----
 
 
+JMeter - Scenario recording
+---------------------------
+
+* The pseudo-component *HTTP(S) Test Script Recorder* may be added to the *WorkBench* special node
+* It acts as an HTTP proxy which forwards all HTTP requests on the fly
+  and creates corresponging jmeter elements at the same time
+* You must adapt your browser proxy parameters
+* You must select a target controller in your jmeter script
+* Use include/exclude patterns to keep only what you need
+
+
 JMeter - Controllers
 --------------------
 
