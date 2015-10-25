@@ -63,7 +63,7 @@ Optional:
 Kinds of testing tools
 ----------------------
 
-[type="asciidoc",cols="^10,^1,^10,^1,^10",grid="none",frame="none"]
+[style="asciidoc",cols="^10,^1,^10,^1,^10",grid="none",frame="none"]
 |=====
 |GUI testing
 |>
