@@ -36,7 +36,7 @@ Content
 //** caching!
 // p27-28
 //** https://regex101.com
-* analysing/graphing/reporting...
+* <<_advanced_data_analysis,Advanced Data Analysis>>
 * Mock-Ups
 // (p98-99)
 
@@ -414,3 +414,16 @@ Randomization
 * Avoid using contant timers, prefer randomized ones, to avoid repetitiive cycle effects
 * In case you know that the UoT is using some caching mechanism, make sure your sample data
   is such that the cache hit/miss rates correspond to reality (may be quite difficult to assess!)
+
+
+Advanced Data Analysis
+----------------------
+
+* Your injector tool won't able to produce all metrics
+* Some metrics are time consuming
+* If you want to compute other metrics:
+** use Excel -> not recommended because it's limited and you will miss important aspects by limiting yourself
+** program it yourself -> fine if you don't need to do it too often
+** use a statistics computing tool -> recommended
+*** For example: R (https://www.r-project.org/) {br}
+    Very powerfull and versatile, but it takes a bit of time to get the hang of it.
