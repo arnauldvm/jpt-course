@@ -24,7 +24,7 @@ Content
 * Objective
 * References
 * The four layers model
-* Decision Tress
+* Decision Tree
  
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
