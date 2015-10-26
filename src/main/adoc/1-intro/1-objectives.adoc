@@ -15,3 +15,14 @@ Content
 * objectives of the course
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+Objectives of the course
+------------------------
+
+* know how the design of the JVM (and the OS) influence the performance of an application
+* be able to design efficient, representative performance tests
+* use performance tests to detect bottlenecks before they reach the production system
+* find origin of performance issues
+* find evidences of the origin of performance issues
+* avoid spending effort on useless fixes (avoid trial and error)
