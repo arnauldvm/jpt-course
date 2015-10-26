@@ -7,7 +7,7 @@ v0.0, 24-Sep-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
-
+:tld: pass:[~]
 
 Content
 -------
@@ -15,3 +15,15 @@ Content
 * introduction to the course
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+Introduction to the course
+--------------------------
+
+* Inspired by the course "Java Performance Tuning" from Kodewerk
+* 50% "practical theory", i.e. theory inspired by field experience
+* 50% workshops
+* {tld}1 day on writing performance tests
+* {tld}1.5 days on investigating issues
+* 0.5 day on side subjects
+* focus on Java Web Applications (but generalizable to other cases)
