@@ -51,7 +51,16 @@ Memory usage monitoring: GC log
 
 Records all activities of the GC.
 
--> By analyzing, one can extract the following metrics:
+Not activated by default.
+
+[source, sh]
+----
+> java -Xloggc:gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps ...
+----
+
+
+Important metrics
+-----------------
 
 [horizontal]
 Liveset:: amount of memory actually required. Given the behaviour of the garbage collection,
@@ -67,7 +76,7 @@ CPU throuhgput:: proportion of time the CPU is _not_ busy doing GC +
 
 
 GCViewer
--------
+--------
 
 image:images/gcviewer-resized.gif[]
 
