@@ -17,9 +17,11 @@ v0.1, 27-Oct-2015: Draft version
 Content
 -------
 
-* ...
-* metrics: GC log, heapdump
-* tools: GC Viewer, custom scripts, MAT
+* Usual causes
+* GC Log
+* Metrics
+* Heapdump
+* Dominator Tree
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
