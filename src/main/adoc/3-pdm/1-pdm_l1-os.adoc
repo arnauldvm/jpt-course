@@ -7,6 +7,9 @@ v0.0, dd-mmm-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:pdm-width: 25%
+:tabletags-blue.bodydata: <td style="background-color:skyblue;text-align:center">|</td>
+:tabledef-default.blue-style: tags="blue"
 
 
 Content
@@ -17,3 +20,106 @@ Content
 * tools: top (U*X), perfmon (Windows), custom scripts
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+Dominant Consumer: OS
+---------------------
+
+[width="{pdm-width}", halign="center", float="right"]
+|===========
+| Actors
+| Application
+| Java VM
+b| OS (Hardware)
+|===========
+
+Usual causes::
+* excessive context switching
+** lock contention?
+* Disk I/O
+* Network I/O
+
+If OS spends time managing access to resources, there will be more CPU system time than usual.
+
+IMPORTANT: *Symptom* +
+Proportion of CPU system time vs. user time is too high.
+
+
+Dominant Consumer: "None"
+-------------------------
+
+Usual causes::
+* slow I/O
+* synchronous calls to slow external systems
+* over worked connection or thread pool
+* faulty, misconfigured or otherwise slow hardware network/disk
+** DNS
+
+_+ Make sure there is enough load on the system!_
+
+IMPORTANT: *Symptom* +
+Low CPU usage and no system CPU time
+
+
+Resources consumption monitoring: vmstat
+----------------------------------------
+
+[source,sh]
+----
+> vmstat [delay_in_sec [count]]
+----
+On Linux +
+image:images/vmstat_linux.png[align="left"] +
+On Solaris +
+image:images/vmstat_solaris.png[align="left"]
+
+CAUTION: First line shows consolidate data since boot time +
+Each next line covers one interval of time (delay_in_sec)
+
+
+Resources consumption monitoring: Perfmon
+-----------------------------------------
+
+On Windows +
+image:images/PerfMon_windows.png[width="700", align="center"]
+
+
+Case studies: CPU bottleneck
+----------------------------
+
+image:images/vmstat_sample_r.png[align="left"]
+
+IMPORTANT: *Symptoms* +
++r >> 2 * # CPU+ (4 in this case)
+
+TIP: *Resolution* +
+- add more CPU +
+- or optimize algorithm (e.g. https://en.wikipedia.org/wiki/Strength_reduction[strength reduction])
+
+
+Case studies: starvation
+------------------------
+
+image:images/vmstat_sample_cs.png[align="left"]
+
+IMPORTANT: *Symptoms* +
++cs high and CPU low+ -> Lots of context switching +
+=> threads don't consume their alloted time quantum
+
+TIP: *Resolution* +
+find what's blocking threads progress: locks, I/O, network 
+
+
+Case studies: Dominant OS
+-------------------------
+
+image:images/vmstat_sample_us-sy.png[align="left"]
+
+IMPORTANT: *Symptoms* +
++sy > us ÷ 10+ -> OS activity dominates
+
+TIP: *Resolution* +
+- high cs -> lock contention? +
+- I/O? (disk or network)
+
+
