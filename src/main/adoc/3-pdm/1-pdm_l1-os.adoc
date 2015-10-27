@@ -115,7 +115,13 @@ image:images/w_osx.png[width="700",align="left"]
 Resources consumption monitoring: Perfmon
 -----------------------------------------
 
-On Windows +
+Windows command line:
+[source,sh]
+----
+> typeperf metric metric ...
+----
+
+GUI: +
 image:images/PerfMon_windows-crop.png[width="700", align="center"]
 // some strange behavior with image conversion inside asciidoc(/libpng)
 // tried to re-save, convert (GIF,JPG), resize, re-snapshot ... the initial image, but to no avail
