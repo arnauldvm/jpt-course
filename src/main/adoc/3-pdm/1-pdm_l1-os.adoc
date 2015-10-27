@@ -15,9 +15,11 @@ v0.1, 27-Oct-2015: Draft version
 Content
 -------
 
-* ...
-* metrics: vmstat, mpstat, memstat, lsof, JMeter Perfmon Server Agent, Windows Performance Monitor (perfmon)
-* tools: top (U*X), perfmon (Windows), custom scripts
+* Usual causes
+* No dominant consumer
+* Metrics
+* Monitoring tools
+* Case studies
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
