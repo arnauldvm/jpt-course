@@ -77,6 +77,28 @@ CAUTION: First line shows consolidate data since boot time +
 Each next line covers one interval of time (delay_in_sec)
 
 
+Resources consumption monitoring: top
+-------------------------------------
+
+[source,sh]
+----
+> top ...
+----
+On U*X +
+image:images/top_osx.png[width="700",align="left"]
+
+[source,sh]
+----
+> w ...
+----
+On U*X +
+image:images/w_osx.png[width="700",align="left"]
+
+[horizontal]
+Load Average:: average size of the run queue over a period of time +
+ -> last 1, 5, and 15 minutes
+
+
 Resources consumption monitoring: Perfmon
 -----------------------------------------
 
