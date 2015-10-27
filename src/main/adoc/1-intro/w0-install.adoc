@@ -46,7 +46,7 @@ Installation
 
 * Copy the kit from one of the following locations:
 ** +//AVM-PC/Public+
-** https://github.com/arnauldvm/jpt-exercises/blob/master/download.md[GitHub / Dropbox]
+** https://github.com/arnauldvm/jpt-exercises/blob/master/download.md[GitHub / Dropbox]: jpt-exercises
 ** USB key
 * Choose appropriate platform:
 ** +jpt-kit-win32-x64.zip+ (269M)
