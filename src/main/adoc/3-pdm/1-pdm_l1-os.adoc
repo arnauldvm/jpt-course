@@ -122,6 +122,37 @@ image:images/PerfMon_windows-crop.png[width="700", align="center"]
 // only this re-snapshot+cropped version is finally working, by chanche
 
 
+Threads dump
+------------
+
+* Identify threads bottlenecks
+* Determine what threads are doing.
+* Cheap to produce: no impact on performance
+
+* Analyse the file with ThreadLogic (also gives specific hints in case of a WebLogic dump)
+
+
+Threads dump
+------------
+
+To generate a heap dump:
+
+* Find the PID of the JVM
+[source,sh]
+----
+> ps -A | grep java
+----
+
+* Send the order to the JVM
+[source,sh]
+----
+> jstack PID > threadsdump.tdump
+or
+> kill -3 PID
+----
+(in the latter case, the thread dump is sent to the stdout of the java process)
+
+
 Case studies: CPU bottleneck
 ----------------------------
 
