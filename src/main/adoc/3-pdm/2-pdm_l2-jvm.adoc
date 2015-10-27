@@ -7,6 +7,7 @@ v0.1, 27-Oct-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
 :pdm-width: 25%
 :tabletags-green.bodydata: <td style="background-color:palegreen;text-align:center">|</td>
 :tabledef-default.green-style: tags="green"
@@ -69,3 +70,26 @@ GCViewer
 -------
 
 image:images/gcviewer-resized.gif[]
+
+
+Memory usage analysis: Dominator tree
+-------------------------------------
+
+* An object x *dominates* an object y if every path in the object graph from the start (or the root) node to y must go through x.
+* The *immediate dominator* x of some object y is the dominator closest to the object y.
+* A *dominator tree* is built out of the object graph. In the dominator tree each object is the immediate dominator of its children, so dependencies between the objects are easily identified.
+* The objects belonging to the sub-tree of x (i.e. the objects dominated by x ) represent the *retained set* of x .
+* *Shallow heap* is the memory consumed directly by one object.
+* *Retained heap* is the size of the retained set, i.e. the sum of the shallow heap of all object in the retained set.
+
+IMPORTANT: *Retained set* of X is the set of objects which would be removed by GC when X is garbage collected.
+
+
+Memory usage analysis: Dominator tree
+-------------------------------------
+
+Objects graph vs. dominator tree:
+
+image:images/dominator_tree.png[]
+
+(A & B are GC roots)
