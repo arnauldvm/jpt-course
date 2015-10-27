@@ -10,6 +10,7 @@ v0.1, 27-Oct-2015: Draft version
 :pdm-width: 25%
 :tabletags-green.bodydata: <td style="background-color:palegreen;text-align:center">|</td>
 :tabledef-default.green-style: tags="green"
+:nil: pass:[</>]
 
 
 Content
@@ -47,4 +48,18 @@ GC CPU ratio too high (too many GC events, too much time in GC...)
 Memory usage monitoring: GC log
 -------------------------------
 
-NOTE: Will be described in a future presentation.
+Records all activities of the GC.
+
+-> By analyzing, one can extract the following metrics:
+
+[horizontal]
+Liveset:: amount of memory actually required. Given the behaviour of the garbage collection,
+it is known only after an old (full) collection. +
+-> *memory leak* detection
+Memory allocation rate:: speed of memory allocation by the application.
+It depends on the application usage and application implementation details. +
+-> in general systems are able to sustain a rate <{nil}= *500 MB/s*, not more
+GC CPU usage:: proportion of time the CPU is busy doing GC +
+-> Should not exceed *2-3%*
+CPU throuhgput:: proportion of time the CPU is _not_ busy doing GC +
+-> +100% - GC CPU usage+
