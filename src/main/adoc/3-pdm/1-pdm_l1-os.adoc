@@ -61,6 +61,21 @@ IMPORTANT: *Symptom* +
 Low CPU usage and no system CPU time
 
 
+Important metrics
+-----------------
+
+[horizontal]
+Load / Run queue size:: (cf. +vmstat+) count of the number of process using or waiting for CPU 
+Load Average:: (cf. +top+) average size of the run queue over a period of time +
+ -> last 1, 5, and 15 minutes
+CPU Idle:: amount of time the CPU isn't used by any process +
+ => +Total CPU usage = 100% - idle+
+CPU System:: time spent by the CPU executing kernel code
+CPU User:: time spent by the CPU executing user (application) code
+Context switches:: counts how many times the CPU has switched from one thread to another, per second
+Interrupts:: number of interrupt, including clock, per second
+
+
 Resources consumption monitoring: vmstat
 ----------------------------------------
 
@@ -69,9 +84,9 @@ Resources consumption monitoring: vmstat
 > vmstat [delay_in_sec [count]]
 ----
 On Linux +
-image:images/vmstat_linux.png[align="left"] +
+image:images/vmstat_linux.png[width=630,align="left"] +
 On Solaris +
-image:images/vmstat_solaris.png[align="left"]
+image:images/vmstat_solaris.png[width=600,align="left"]
 
 CAUTION: First line shows consolidate data since boot time +
 Each next line covers one interval of time (delay_in_sec)
@@ -93,10 +108,6 @@ image:images/top_osx.png[width="700",align="left"]
 ----
 On U*X +
 image:images/w_osx.png[width="700",align="left"]
-
-[horizontal]
-Load Average:: average size of the run queue over a period of time +
- -> last 1, 5, and 15 minutes
 
 
 Resources consumption monitoring: Perfmon
@@ -132,7 +143,7 @@ IMPORTANT: *Symptoms* +
 => threads don't consume their alloted time quantum
 
 TIP: *Resolution* +
-find what's blocking threads progress: locks, I/O, network 
+find what's blocking threads progress: livelocks, I/O, network 
 
 
 Case studies: Dominant OS
