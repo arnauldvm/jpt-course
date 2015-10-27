@@ -7,6 +7,9 @@ v0.0, dd-mmm-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:pdm-width: 25%
+:tabletags-red.bodydata: <td style="background-color:indianred;text-align:center">|</td>
+:tabledef-default.red-style: tags="red"
 
 
 Content
@@ -18,3 +21,32 @@ Content
 NOTE: Application here also includes the Application Container!
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+Dominant Consumer: Application
+------------------------------
+
+[width="{pdm-width}", halign="center", float="right"]
+|===========
+| Actors
+r| Application
+| Java VM
+| OS (Hardware)
+|===========
+
+Usual causes::
+* Wrong algorithm
+* Unnecessary work
+* ...
+
+Execution profiling.
+
+IMPORTANT: *Symptoms* +
+- High CPU and no abnormal pattern in GC log
+- Too many threads waiting for CPU
+
+
+Application behaviour: Profiling
+--------------------------------
+
+NOTE: Will be described in a future presentation.

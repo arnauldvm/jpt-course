@@ -20,30 +20,3 @@ Plan
 
 
 
-Dominant Consumer: Application
-------------------------------
-
-[width="{pdm-width}", halign="center", float="right"]
-|===========
-| Actors
-| *Application*
-| Java VM
-| OS (Hardware)
-|===========
-
-Usual causes::
-* Wrong algorithm
-* Unnecessary work
-* ...
-
-Execution profiling.
-
-IMPORTANT: *Symptoms* +
-- High CPU and no abnormal pattern in GC log
-- Too many threads waiting for CPU
-
-
-Application behaviour: Profiling
---------------------------------
-
-NOTE: Will be described in a future presentation.
