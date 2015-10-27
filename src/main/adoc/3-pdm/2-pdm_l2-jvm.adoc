@@ -7,6 +7,9 @@ v0.0, dd-mmm-2015: Draft version
 //:theme: volnitsky
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:pdm-width: 25%
+:tabletags-green.bodydata: <td style="background-color:palegreen;text-align:center">|</td>
+:tabledef-default.green-style: tags="green"
 
 
 Content
@@ -17,3 +20,31 @@ Content
 * tools: GC Viewer, custom scripts, MAT
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
+
+
+Dominant Consumer: JVM
+----------------------
+
+[width="{pdm-width}", halign="center", float="right"]
+|===========
+| Actors
+| Application
+g| Java VM
+| OS (Hardware)
+|===========
+
+Usual causes::
+* Memory management
+** memory leaks, System.gc(), premature promotion, memory pools sizing
+* (JIT tuning usually not necessary, except when extreme speed is needed)
+
+Examine GC log.
+
+IMPORTANT: *Symptom* +
+GC CPU ratio too high (too many GC events, too much time in GC...)
+
+
+Memory usage monitoring: GC log
+-------------------------------
+
+NOTE: Will be described in a future presentation.

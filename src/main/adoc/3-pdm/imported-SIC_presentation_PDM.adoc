@@ -19,27 +19,6 @@ Plan
 ----
 
 
-Dominant Consumer: JVM
-----------------------
-
-[width="{pdm-width}", halign="center", float="right"]
-|===========
-| Actors
-| Application
-| *Java VM*
-| OS (Hardware)
-|===========
-
-Usual causes::
-* Memory management
-** memory leaks, System.gc(), premature promotion, memory pools sizing
-* (JIT tuning usually not necessary, except when extreme speed is needed)
-
-Examine GC log.
-
-IMPORTANT: *Symptom* +
-GC CPU ratio too high (too many GC events, too much time in GC...)
-
 
 Dominant Consumer: Application
 ------------------------------
@@ -63,11 +42,6 @@ IMPORTANT: *Symptoms* +
 - High CPU and no abnormal pattern in GC log
 - Too many threads waiting for CPU
 
-
-Memory usage monitoring: GC log
--------------------------------
-
-NOTE: Will be described in a future presentation.
 
 Application behaviour: Profiling
 --------------------------------
