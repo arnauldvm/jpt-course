@@ -63,3 +63,9 @@ GC CPU usage:: proportion of time the CPU is busy doing GC +
 -> Should not exceed *2-3%*
 CPU throuhgput:: proportion of time the CPU is _not_ busy doing GC +
 -> +100% - GC CPU usage+
+
+
+GCViewer
+-------
+
+image:images/gcviewer-resized.gif[]
