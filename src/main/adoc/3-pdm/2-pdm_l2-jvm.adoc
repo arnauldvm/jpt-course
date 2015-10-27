@@ -81,6 +81,28 @@ GCViewer
 image:images/gcviewer-resized.gif[]
 
 
+Memory usage analysis
+---------------------
+
+To generate a heap dump:
+
+* Find the PID of the JVM
+
+[source,sh]
+----
+> ps -A | grep java
+----
+
+* Send the order to the JVM
+
+[source,sh]
+----
+> jmap -dump:format=b,file=heapdump.hprof <pid>
+----
+
+Use a tool to analyse the heapdump, e.g. MAT.
+
+
 Memory usage analysis: Dominator tree
 -------------------------------------
 
