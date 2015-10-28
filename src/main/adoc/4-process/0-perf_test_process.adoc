@@ -12,14 +12,79 @@ v0.0, dd-mmm-2015: Draft version
 Content
 -------
 
-* Process for SIC@Smals
+* <<_rtri_documentation,Documentation>>
+* <<_rtri_process,Process>>
+* <<_rtri_process_smals,Process for SIC@Smals>>
+** Steps
+// (p16)
+//** Plan
+// (p18,19),
+** Mission Sheet
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
 
-Content (bis)
--------
+&rtri; Documentation
+--------------------
 
-* Steps (p16)
-* Plan (p18,19), Mission Sheet
+* Architecture document of the UoT
+* Test plan:
+** goals
+** scope (boundaries of the UoT)
+** resources required (! including key people for running the test or for solving issues)
+** schedulling
+* Requirements: performance goals
+* Test data: input data for the test scenario (! quantity and randomization)
+* Test protocol: process, scenarios, load profiles...
+* Test report:
+** all results (measures and calculations)
+** conclusions
+
+
+&rtri; Process
+--------------
+
+* quality of inputs is key:
+** precise requirements
+** quantity and randomization of input data
+** objective and well defined scope
+* iterative process
+** design
+** test
+** analyse
+** fix
+
+
+&rtri; Process @ Smals
+----------------------
+
+* [Project] Prepare Mission Sheet (V1)
+* Send V1 to SIC -> schedule KOM
+* [Project+SIC] KOM
+** Agree on the high level design of the test protocol (scenarios, load profiles...)
+* LOOP
+** [Project] Complete Mission Sheet (V2)
+*** Final artifacts
+*** Complete set of input data
+*** Complete set of users (attributes...)
+** [SIC] Prepare test environment
+*** [Project] Support
+*** [Middleware] Support
+** [SIC] Detailed test protocol
+*** [Project] Support
+** [SIC] Prepare test harness (jmeter scripts, SOAP clients, jenkins configuration...)
+*** [Project] Support
+** [SIC] Run test
+** [SIC] Analyse results
+** [SIC+Project] discuss results
+** ITERATE
+* [SIC] Prepare report
+** [Project] Review report
+* [SIC] Publish report
+
+
+Mission Sheet
+-------------
+
+See template
 
