@@ -92,7 +92,7 @@ $ javac -version
 $ jmeter # launches the JMeter GUI (use "jm" under CMD.EXE)
 $ mat # launches the Memory Analyzer Tool
 $ threadlogic # launches the Threads Dump Analyzer
-$ curl -I http://www.smals.be # Simple HTTP request
+$ curl -I http://jira.smals.be # Simple HTTP request
 $ perf # Shows system activity metrics every second, hit Ctrl+C to halt
 ^C
 ----
