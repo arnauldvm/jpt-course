@@ -89,6 +89,11 @@ Verify that each of the following commands brings the expected result:
 ----
 $ java -version
 $ javac -version
+$ jps -v # lists the java processes
+$ jstat -help # JVM monitoring
+$ jstack -help # thread dump
+$ jmap -help # heap dump
+$ jconsole # Graphical tool to monitor the JVM
 $ jmeter # launches the JMeter GUI (use "jm" under CMD.EXE)
 $ gcviewer # launches the GC Logs Analyzer
 $ mat # launches the Memory Analyzer Tool
