@@ -90,6 +90,7 @@ Verify that each of the following commands brings the expected result:
 $ java -version
 $ javac -version
 $ jmeter # launches the JMeter GUI (use "jm" under CMD.EXE)
+$ gcviewer # launches the GC Logs Analyzer
 $ mat # launches the Memory Analyzer Tool
 $ threadlogic # launches the Threads Dump Analyzer
 $ curl -I http://jira.smals.be # Simple HTTP request
