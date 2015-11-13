@@ -19,11 +19,12 @@ Installing the training toolsuite
 *****
 
 Part 1::
-* Prerequisites
-* Installation
-* Verification
+* <<_part_1_prerequisites,Prerequisites>>
+* <<_part_1_installation,Installation>>
+* <<_part_1_verification_init,Verification>>
 Part 2::
 * Simple benchmarking
+* <<_part_2_simple_benchmarking_launch_app,Simple benchmarking>>
 
 _(link:../0-extra/1-training_plan.html#_workshops[back to course plan])_
 
