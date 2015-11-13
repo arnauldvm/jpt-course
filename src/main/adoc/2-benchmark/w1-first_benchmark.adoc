@@ -42,7 +42,7 @@ Scenario
 
 * The tested application gives access to a database of programming languages.
 * Only authenticated user may have access to this very sensitive data.
-* One logged in, the user is presented an elaborated request form.{br}
+* Once logged in, the user is presented an elaborated request form.{br}
   (The request form shows the name of the last record visited in the current session.)
 * When the user submits his/her request, the system will display the matching record.
 
