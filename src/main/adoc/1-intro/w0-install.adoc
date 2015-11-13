@@ -18,16 +18,18 @@ Content
 Installing the training toolsuite
 *****
 
+Part 1::
 * Prerequisites
 * Installation
 * Verification
+Part 2::
 * Simple benchmarking
 
 _(link:../0-extra/1-training_plan.html#_workshops[back to course plan])_
 
 
-Prerequisites
--------------
+Part 1: Prerequisites
+---------------------
 
 Installing the kit requires an unzipper (+WinZip+, +7-zip+...).
 
@@ -41,8 +43,8 @@ For the next workshops, you will also need:
 * a decent browser, with a developer mode (e.g. Google Chrome)
 * a cool text editor (programmer friendly, like: VI, SublimeText, Notepad++...)
 
-Installation
-------------
+Part 1: Installation
+--------------------
 
 * Copy the kit from one of the following locations:
 ** +\\AVM-PC\Public\JPT+
@@ -60,8 +62,8 @@ app00/   app01/   local/   setenv.bat   setenv.sh
 ----
 
 
-Verification (init)
--------------------
+Part 1: Verification (init)
+---------------------------
 
 * Start your preferred CLI (bash or CMD) and CD to your install location
 * Execute +. setenv.sh+ (bash) or +setenv.bat+ (CMD)
@@ -82,8 +84,8 @@ perf:: OS resources performance monitoring in CLI mode
 (gatling):: alternative benchmarking tool
 
 
-Verification (run)
-------------------
+Part 1: Verification (run)
+--------------------------
 
 Verify that each of the following commands brings the expected result:
 
@@ -109,8 +111,8 @@ $ gatling.sh or gatling.bat # launches the Gatling injector, hit Ctrl+C to halt
 ----
 
 
-Simple benchmarking (launch app)
---------------------------------
+Part 2: Simple benchmarking (launch app)
+----------------------------------------
 
 * The subdirectory +app00+ contains a very simple webapp
 ** The webapp echoes the HTTP request headers
@@ -128,8 +130,8 @@ Server is listening on port 7666
 ** Should the port not be free, you can change it by editing the launch script (option +-p<port>+)
 
 
-Simple benchmarking (verify app)
---------------------------------
+Part 2: Simple benchmarking (verify app)
+----------------------------------------
 
 * Open a new CLI (remember to execute +. setenv.sh+ or +setenv.bat+)
 * Check that the webapp correctly answers to request{br}
@@ -144,8 +146,8 @@ User-agent=[curl/7.45.0]
 and compare the results
 
 
-Simple benchmarking (jmeter)
-----------------------------
+Part 2: Simple benchmarking (jmeter)
+------------------------------------
 
 * In your second CLI, launch jmeter:
 ----
