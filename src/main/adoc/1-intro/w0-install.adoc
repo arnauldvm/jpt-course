@@ -94,6 +94,7 @@ $ mat # launches the Memory Analyzer Tool
 $ threadlogic # launches the Threads Dump Analyzer
 $ curl -I http://jira.smals.be # Simple HTTP request
 $ perf # Shows system activity metrics every second, hit Ctrl+C to halt
+$      # (might fail on Windows, depending on your privileges)
 ^C
 ----
 
