@@ -268,7 +268,7 @@ Performance metrics statistics
 
 ** Average
 ** Min, Max
-** Percentile: Pct~n~ = X | n% of the data is <=X{br}
+** Percentile: Pct~n~ = X | n% of the data is pass:[<=]X{br}
 (Note that median &equiv; Pct50)
 
 Statistics can produce:
