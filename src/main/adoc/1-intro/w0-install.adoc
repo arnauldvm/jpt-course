@@ -79,6 +79,7 @@ gcviewer:: Garbage Collector Logs Analyzer
 threadlogic:: Threads Dump Analyzer for Weblogic
 curl:: HTTP client in CLI mode
 perf:: OS resources performance monitoring in CLI mode
+(gatling):: alternative benchmarking tool
 
 
 Verification (run)
@@ -101,6 +102,9 @@ $ threadlogic # launches the Threads Dump Analyzer
 $ curl -I http://jira.smals.be # Simple HTTP request
 $ perf # Shows system activity metrics every second, hit Ctrl+C to halt
 $      # (might fail on Windows, depending on your privileges)
+^C
+$ recorder.sh or recorder.bat # launches the Gatling recorder
+$ gatling.sh or gatling.bat # launches the Gatling injector, hit Ctrl+C to halt
 ^C
 ----
 
