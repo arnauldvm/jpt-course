@@ -139,6 +139,8 @@ Part 2: Simple benchmarking (verify app)
 _(the exact output may slightly differ depending on your curl version)_:
 ----
 $ curl localhost:7666 # adapt the port number if required
+GET HTTP/1.1 /
+
 Accept=[*/*]
 Host=[localhost:7666]
 User-agent=[curl/7.45.0]
