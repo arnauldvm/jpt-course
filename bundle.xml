@@ -15,8 +15,8 @@
   <plugin class="org.pdfsam.plugin.merge.GUI.MergeMainGUI" name="Merge/Extract">
     <filelist>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/0-course_description.pdf" pageselection="All"/>
-      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/1-training_plan.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/1-intro/0-introduction.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/1-training_plan.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/1-intro/1-objectives.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/1-intro/w0-install.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/2-benchmark/1-benchmark_design.pdf" pageselection="All"/>
