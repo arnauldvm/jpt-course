@@ -4,8 +4,6 @@ OS: improve slides about UNIX Schedulling
 PDM-L2: Illustrate GC behavior with jVisualVM + load test with memory leak
 PDM-L3: Application behaviour: Profiling
 PDM-L3: Application behaviour: Flight record
-Exercises: remind to solve one thing at a time
-Exercises: remind to solve not by reading the code, but by using external tools
 
 Gatling
 ditaa
@@ -18,3 +16,5 @@ test :
 thread dump: jstack <pid> > threadsdump.txt
 heap dump: jmap -dump:format=b,file=heapdump.hprof <pid>
 profiler: require jmx options
+Exercises: remind to solve one thing at a time
+Exercises: remind to solve not by reading the code, but by using external tools

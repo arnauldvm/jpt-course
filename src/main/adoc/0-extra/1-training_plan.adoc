@@ -115,9 +115,9 @@ Workshops
 * link:../1-intro/w0-install.html#_content[Install the training toolsuite]
 * link:../2-benchmark/w1-first_benchmark.html#_content[First performance test]
 * link:../2-benchmark/w2-wrapup_benchmark.html#_content[Wrap-up the performance test]
-* link:../3-pdm/w3-pdm_l1-os.html#_content[PDM Layer 1 (OS) in practice]
-* link:../3-pdm/w4-pdm_l2-jvm.html#_content[PDM Layer 2 (JVM) in practice]
-* link:../3-pdm/w5-pdm_l3-app.html#_content[PDM Layer 3 (Application) in practice]
+* link:../3-pdm/w3-dominant_os.html#_content[PDM Layer 1 (OS) in practice]
+* link:../3-pdm/w4-dominant_jvm.html#_content[PDM Layer 2 (JVM) in practice]
+* link:../3-pdm/w5-dominant_app.html#_content[PDM Layer 3 (Application) in practice]
 
 
 Extras

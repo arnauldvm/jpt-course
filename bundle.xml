@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pdfsam_saved_jobs version="2.2.4" savedate="21-Oct-2015" selection="org.pdfsam.plugin.merge.GUI.MergeMainGUI">
+<pdfsam_saved_jobs version="2.2.4" savedate="15-Nov-2015" selection="org.pdfsam.plugin.merge.GUI.MergeMainGUI">
   <plugin class="org.pdfsam.guiclient.gui.panels.JInfoPanel" name="About"/>
   <plugin class="org.pdfsam.plugin.mix.GUI.MixMainGUI" name="Alternate Mix">
     <destination value=""/>
@@ -26,9 +26,12 @@
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/0-pdm_intro.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/2-internals_os.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/1-pdm_l1-os.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/w3-dominant_os.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/3-internals_jvm.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/2-pdm_l2-jvm.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/w4-dominant_jvm.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/3-pdm_l3-app.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/w5-dominant_app.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/4-process/0-perf_test_process.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/5-analysis/1-analysis_tools.pdf" pageselection="All"/>
     </filelist>

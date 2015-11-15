@@ -1,0 +1,43 @@
+// build_options: 
+Java Performance Tuning - Workshop 4
+====================================
+Arnauld Van Muysewinkel <avm@pendragon.be>
+v1.0, 15-Nov-2015: Initial version
+:backend: slidy
+//:theme: volnitsky
+:data-uri:
+:copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+:icons:
+
+
+Content
+-------
+
+*****
+Identify Dominant JVM issues
+*****
+
+* Assignment
+
+_(link:../0-extra/1-training_plan.html#_workshops[back to course plan])_
+
+
+Assignment
+----------
+
+Based on the performance test developed during workshop 2, identify if the JVM is dominant, and solve the issue(s)
+
+* start from where you left at the end of workshop 3
+* there might be several issues (or none)
+* you must identify the kind of issue without looking in the code
+* then, go to the code and fix the issue
+* solve one issue at a time, re-run the performance test between each
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====
