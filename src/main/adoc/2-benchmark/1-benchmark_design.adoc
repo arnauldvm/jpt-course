@@ -383,7 +383,7 @@ Actors
 
 The _test suite_ is composed of all scenarios, cases data, load profile definitions
 
-[graphviz]
+[graphviz,generated-images/benchmark_actors.png]
 -----
 digraph G {
   size = "7,4";
@@ -471,7 +471,7 @@ Multiple paths in a scenario
 
 To solve this we can use a statistical approach:
 
-[graphviz]
+[graphviz,generated-images/scenario_paths.png]
 -----
 digraph G {
   size = "7,4";

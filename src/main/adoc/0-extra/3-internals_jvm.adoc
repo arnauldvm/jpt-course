@@ -31,7 +31,7 @@ References
 Part 1
 ------
 
-[graphviz,,twopi]
+[graphviz,generated-images/GC_title.png,twopi]
 -----
 digraph G {
   size = "7,4";
@@ -67,7 +67,7 @@ Actually:
 Counting the references to an object may easily be automated.
 (E.g. Python prior v2)
 
-[graphviz,,fdp]
+[graphviz,generated-images/ref_counting-1.png,fdp]
 -----
 digraph G {
   size = "7,4";
@@ -132,7 +132,7 @@ digraph G {
 
 ...
 
-[graphviz,,fdp]
+[graphviz,generated-images/ref_counting-2.png,fdp]
 -----
 digraph G {
   size = "7,4";
@@ -197,7 +197,7 @@ digraph G {
 
 But:
 
-[graphviz,,fdp]
+[graphviz,generated-images/ref_counting-3.png,fdp]
 -----
 digraph G {
   size = "7,4";
@@ -211,7 +211,7 @@ digraph G {
   GC_root_2 -> p21 -> p22 -> p23 -> p21
                p23 -> p24 -> p23
   GC_root_2 -> p25
-  
+
   GC_root_3 -> p31 -> p32 -> p31
   GC_root_3 -> p33 -> p34
 
@@ -303,7 +303,7 @@ All GC algorithms are variations of this two steps processing.
 GC Principles: Mark and Sweep
 -----------------------------
 
-[graphviz,,fdp]
+[graphviz,generated-images/mark_and_sweep.png,fdp]
 -----
 digraph G {
   size = "7,4";
@@ -399,7 +399,7 @@ GC Principles: Memory Pools
 Memory is typically divided as follows
 (there might be some variations, depending on the algorithm):
 
-[graphviz]
+[graphviz,generated-images/memory_pools.png]
 -----
 digraph G {
   size = "7,4";
@@ -447,7 +447,7 @@ Survivor spaces::
 GC Principles: Memory Pools
 ---------------------------
 
-[graphviz]
+[graphviz,generated-images/survivor_spaces-1.png]
 -----
 digraph G {
   size = "4,4";
@@ -476,7 +476,7 @@ digraph G {
 GC Principles: Memory Pools
 ---------------------------
 
-[graphviz]
+[graphviz,generated-images/survivor_spaces-2.png]
 -----
 digraph G {
   size = "4,4";
@@ -505,7 +505,7 @@ digraph G {
 GC Principles: Memory Pools
 ---------------------------
 
-[graphviz]
+[graphviz,generated-images/survivor_spaces-3.png]
 -----
 digraph G {
   size = "4,4";
@@ -641,7 +641,7 @@ Is thrown when:
 Part 2
 ------
 
-[graphviz,,twopi]
+[graphviz,generated-images/JIT_title.png,twopi]
 -----
 digraph G {
   size = "7,4";

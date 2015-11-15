@@ -178,7 +178,7 @@ image::sample_jmeter_tree.png[width="75%"]
 JMeter - Lifecycle
 ------------------
 
-[graphviz]
+[graphviz,generated-images/jmeter_lifecycle.png]
 -----
 digraph G {
   size = "9,9";

@@ -181,7 +181,7 @@ Four candidates::
 Dominator Decision Tree
 -----------------------
 
-[graphviz]
+[graphviz,generated-images/dominator_decision_tree.png]
 -----
 digraph G {
   size ="7,4";
