@@ -186,29 +186,29 @@ digraph G {
   node[shape=box];
   edge[weight=2];
 
-  subgraph cluster_0 {
-    label = "Test Plan"
+  subgraph cluster_0p {
 
-    begin0 -> setup -> test0
-    p_seq -> test0:w [dir=back taillabel="sequential" arrowtail=none]
-    test0:e -> p_par [headlabel="parallel" arrowhead=none]
-    p_seq -> main_seq
-    p_par -> main_par
-    { rank=same; p_seq; test0; p_par }
-    main_seq -> teardown
-    main_par -> teardown
-    { rank=same; main_seq; main_par }
-    teardown -> done0
-    setup[shape=record,label="{setUp Thread Group 1|...|setUp Thread Group N}"]
-    main_seq[shape=record label="{Thread Group 1|...|Thread Group N}" style=filled fillcolor=palegreen]
+    label = "Test Plan\n(parallel)"
+
+    begin0_par -> setup_par -> main_par -> teardown_par -> done0_par
+    setup_par[shape=record label="setUp Thread\nGroup 1|...|setUp Thread\nGroup N" style=filled fillcolor=palegreen]
     main_par[shape=record label="Thread\nGroup 1|...|Thread\nGroup N" style=filled fillcolor=palegreen]
-    teardown[shape=record label="{tearDown Thread Group 1|...|tearDown Thread Group N}"]
+    teardown_par[shape=record label="tearDown Thread\nGroup 1|...|tearDown Thread\nGroup N" style=filled fillcolor=palegreen]
 
-    test0[label="?", shape=diamond]
-    begin0 [label="" shape=circle]
-    done0 [label="" shape=circle style=filled]
-    p_seq [width=0 shape=point label=""]
-    p_par [width=0 shape=point label=""]
+    begin0_par [label="" shape=circle style=filled fillcolor=white]
+    done0_par [label="" shape=circle style=filled]
+  }
+
+  subgraph cluster_0s {
+    label = "Test Plan\n(serial)"
+
+    begin0_seq -> setup_seq -> main_seq -> teardown_seq -> done0_seq
+    setup_seq[shape=record label="{setUp Thread Group 1|...|setUp Thread Group N}" style=filled fillcolor=palegreen]
+    main_seq[shape=record label="{Thread Group 1|...|Thread Group N}" style=filled fillcolor=palegreen]
+    teardown_seq[shape=record label="{tearDown Thread Group 1|...|tearDown Thread Group N}" style=filled fillcolor=palegreen]
+
+    begin0_seq [label="" shape=circle style=filled fillcolor=white]
+    done0_seq [label="" shape=circle style=filled]
   }
 
   subgraph cluster_1 {
@@ -217,8 +217,8 @@ digraph G {
     fillcolor = palegreen
 
     begin1 -> p1_2 [arrowhead=none]
-    p1_2 -> steps -> test1
-    steps[shape=record label="{<f1> Step 1|...|Step n}" style=filled fillcolor=lightpink]
+    p1_2 -> samples -> test1 [weight=2]
+    samples[shape=record label="{<f1> Sample 1|...|Sample n}" style=filled fillcolor=lightpink]
     p1_2 -> p1_1 [weight=1 dir=back]
     p1_0 -> p1_1 [dir=back arrowtail=none]
     test1:e -> p1_0 [weight=1 label="next iteration" arrowhead=none]
@@ -227,7 +227,7 @@ digraph G {
     test1 -> done1 [label="thread completed"]
 
     test1[label="?", shape=diamond]
-    begin1[label="",shape=circle]
+    begin1[label="",shape=circle style=filled fillcolor=white]
     done1[label="" shape=circle style=filled]
     p1_0 [width=0 shape=point label=""]
     p1_1 [width=0 shape=point label=""]
@@ -235,25 +235,27 @@ digraph G {
   }
 
   subgraph cluster_2 {
-    label = "1 step"
+    label = "1 sample"
     style = filled
     fillcolor = lightpink
 
-    begin2 -> "Configuration elements" -> "Pre-Processors" -> Timers -> Sampler
+    begin2 -> before_elements -> Sampler
+    before_elements[shape=record label="{Configuration elements|Pre-Processors|Timers}"]
 
     Sampler [penwidth=2 fontsize=20 style="bold filled" style=filled fillcolor=lightblue]
-    test2:e -> p2_0 [weight=1 headlabel="SampleResult\nis null" arrowhead=none]
+    test2:e -> p2_0 [weight=1 taillabel="SampleResult\nis null" arrowhead=none]
     { rank=same; test2; p2_0 }
     p2_0 -> p2_1 [arrowhead=none]
     p2_1 -> done2 [weight=1]
     { rank=same; done2; p2_1 }
-    test2 -> "Post-Processors" [label=" no"]
-    "Post-Processors" -> Assertions -> Listeners -> done2
+    test2 -> after_elements [label=" no"]
+    after_elements[shape=record label="{Post-Processors|Assertions|Listeners}"]
+    after_elements -> done2
 
     Sampler -> test2
 
     test2[label="?" shape=diamond]
-    begin2[label="",shape=circle]
+    begin2[label="",shape=circle style=filled fillcolor=white]
     done2[label="" shape=circle style=filled]
     p2_0 [width=0 shape=point label=""]
     p2_1 [width=0 shape=point label=""]
