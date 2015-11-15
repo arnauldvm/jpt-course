@@ -47,7 +47,7 @@ JVM Memory model
 * method area: permanent generation
 * heap space
 
-image::Cookbook_JVMArguments_2_MemoryModel.png[]
+image::images/Cookbook_JVMArguments_2_MemoryModel.png[]
 
 
 What is Garbage Collection (GC)
@@ -381,7 +381,7 @@ GC Principles: Compacting
 GC Principles: "Generational Hypothesis"
 ----------------------------------------
 
-image::./150321-jvm-hypo.PNG[]
+image::images/150321-jvm-hypo.PNG[]
 
 Under this hypothesis, the JVM memory may be divided in two regions,
 managed independently:
@@ -548,10 +548,10 @@ GC Principles: M&C vs. MSC
 --------------------------
 
 Mark-and-Copy::
-image:GC-mark-and-copy-in-Java.png[]
+image:images/GC-mark-and-copy-in-Java.png[]
 
 Mark-Sweep-Compact::
-image:GC-mark-sweep-compact.png[]
+image:images/GC-mark-sweep-compact.png[]
 
 
 GC Principles: Collection kinds
