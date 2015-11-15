@@ -21,9 +21,25 @@ _(link:../0-extra/1-training_plan.html#_extras[back to course plan])_
 References
 ----------
 
-* 
+* ( http://elsoc.wikia.com/wiki/Scheduling#Interactive_Scheduling_Algorithms )
 
 
 Schedulling
 -----------
 
+image::images/Picture_9sfd.png[width=640]
+
+
+Schedulling
+-----------
+
+image::images/processstate.gif[width=640]
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====
