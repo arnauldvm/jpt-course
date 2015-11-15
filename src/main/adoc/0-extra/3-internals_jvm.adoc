@@ -13,10 +13,10 @@ v0.0.1, 28-Sep-2014: Draft version
 Content
 -------
 
-* References
-* Garbage Collectors
-* Just-In-Time Compilers
-* others?
+* <<_references,References>>
+* <<_part_1,Garbage Collectors>>
+* <<_part_2,Just-In-Time Compilers>>
+//* others?
 
 _(link:../0-extra/1-training_plan.html#_extras[back to course plan])_
 
