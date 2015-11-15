@@ -2,7 +2,7 @@
 Java Performance Tuning - PDM Layer 3: Application
 ==================================================
 Arnauld Van Muysewinkel <avm@pendragon.be>
-v0.1, 27-Oct-2015: Draft version
+v1.0, 15-Nov-2015: Initial version, including small corrections
 :backend: slidy
 //:theme: volnitsky
 :data-uri:

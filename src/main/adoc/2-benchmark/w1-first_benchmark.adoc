@@ -2,7 +2,7 @@
 Java Performance Tuning - Workshop 1
 ====================================
 Arnauld Van Muysewinkel <avm@pendragon.be>
-v1.0, 20-Oct-2015: Initial version
+v1.1, 15-Nov-2015: Initial version, including small corrections
 :backend: slidy
 //:theme: volnitsky
 :data-uri:
