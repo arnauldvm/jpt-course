@@ -91,7 +91,7 @@ Kinds of testing tools
 OpenSource software:
 
 * *JMeter*: extended GUI, many protocols, scenario = XML tree
-* Gatling: scenario = Groovy code
+* Gatling: scenario = DSL (Scala code)
 * Grinder: distributed testing with many injectors
 * ...
 
