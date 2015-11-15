@@ -49,4 +49,26 @@ IMPORTANT: *Symptoms* +
 Application behaviour: Profiling
 --------------------------------
 
-NOTE: Will be described in a future presentation.
+* Expensive to produce: huge impact on performance
+
+
+Application behaviour: Sampling
+-------------------------------
+
+* Lighter impact on performance, but less precise
+
+
+Application behaviour: Flight record
+------------------------------------
+
+* Cheaper to produce: light impact on performance (1-2%), and lots of information
+   (but commercial feature)
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====
