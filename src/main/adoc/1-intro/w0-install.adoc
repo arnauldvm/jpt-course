@@ -128,7 +128,7 @@ $ ./compile.sh # "compile.bat" under CMD.EXE
 $ ./runserver.sh # "runserver.bat" under CMD.EXE
 Server is listening on port 7666
 ----
-** Should the port not be free, you can change it by editing the launch script (option +-p<port>+)
+** Should the port not be free, you can change it by editing the launch script (option +-p{port}+)
 
 
 Part 2: Simple benchmarking (verify app)

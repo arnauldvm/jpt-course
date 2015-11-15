@@ -99,7 +99,7 @@ To generate a heap dump:
 
 [source,sh]
 ----
-> jmap -dump:format=b,file=heapdump.hprof <pid>
+> jmap -dump:format=b,file=heapdump.hprof {pid} # replace {pid} by the found PID
 ----
 
 Use a tool to analyse the heapdump, e.g. MAT.
