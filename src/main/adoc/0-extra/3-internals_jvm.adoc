@@ -662,6 +662,9 @@ JIT: Origin
 
 -> solution: JIT (HotSpot)
 
+WARNING: JIT stated only after 10,000 iterations (server mode)!{br}
+(client mode: 1500 iterations)
+
 
 That's all folks!
 -----------------
