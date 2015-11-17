@@ -171,7 +171,7 @@ JMeter - Tree
   -> replicate their behavior to all elements in their scope (i.e. in the subtree delimited by their parent)
 
 |
-image::sample_jmeter_tree.png[width="75%"]
+image::images/sample_jmeter_tree.png[width="75%"]
 |=====
 
 

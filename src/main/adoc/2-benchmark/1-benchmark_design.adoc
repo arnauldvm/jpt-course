@@ -240,7 +240,7 @@ WebLogic:: *end time*
 Ambiguities with response times
 -------------------------------
 
-image::HTTP_ResponseTimes.png[]
+image::images/HTTP_ResponseTimes.png[]
 
 
 Performance metrics (cont'd)
@@ -289,7 +289,7 @@ A scalar measure (e.g. average response time) should be taken only
 over a time window where the system is in a steady state
 (i.e. metrics remain stable), typically _after_ the rampup.
 
-image::measurement_window.png[]
+image::images/measurement_window.png[]
 
 -> Documentation
 ----------------
