@@ -2,7 +2,7 @@
 Java Performance Tuning - PDM Layer 1: Operating System
 =======================================================
 Arnauld Van Muysewinkel <avm@pendragon.be>
-v0.1, 27-Oct-2015: Initial version
+v0.2, 17-Nov-2015: Initial version, with small corrections
 :backend: slidy
 //:theme: volnitsky
 :data-uri:
@@ -168,9 +168,9 @@ To generate a heap dump:
 * Send the order to the JVM
 [source,sh]
 ----
-> jstack PID > threadsdump.tdump
+> jstack {pid} > threadsdump.tdump # replace {pid} by the found PID
 or
-> kill -3 PID
+> kill -3 {pid} # replace {pid} by the found PID
 ----
 (in the latter case, the thread dump is sent to the stdout of the java process)
 
