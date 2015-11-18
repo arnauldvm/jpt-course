@@ -6,7 +6,10 @@ v0.0, dd-mmm-2015: Draft version
 :backend: slidy
 //:theme: volnitsky
 :data-uri:
+//:icons:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
+//:br: pass:[<br>]
+//:tld: pass:[~]
 
 Content
 -------
