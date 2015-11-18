@@ -59,7 +59,7 @@ Part 1: Installation
 * Extract to the same location
 * Your install location should look like this:
 ----
-app00/   app01/   local/   setenv.bat   setenv.sh
+app00/   app01/   exercise12/   local/   setenv.bat   setenv.sh
 ----
 
 
