@@ -2,7 +2,7 @@
 Java Performance Tuning - Workshop 0
 ====================================
 Arnauld Van Muysewinkel <avm@pendragon.be>
-v1.1, 15-Nov-2015: Initial version, including small corrections
+v1.2, 18-Nov-2015: Initial version, including small corrections
 :backend: slidy
 //:theme: volnitsky
 :data-uri:
@@ -128,7 +128,8 @@ $ ./compile.sh # "compile.bat" under CMD.EXE
 $ ./runserver.sh # "runserver.bat" under CMD.EXE
 Server is listening on port 7666
 ----
-** Should the port not be free, you can change it by editing the launch script (option +-p{port}+)
+** Should the port not be free, you can change it by editing the launch script{br}
+(option +-p\{port}+)
 
 
 Part 2: Simple benchmarking (verify app)
