@@ -307,4 +307,4 @@ http://centers.intranext.smals.be/SIC/Wiki/Pages/]
 http://centers.intranext.smals.be/SIC/Wiki/Pages/WIKI_Best_Practices_for_Performance.aspx[
 WIKI_Best_Practices_for_Performance.aspx]
 
-image::images/Perry_The_Platypus-210x140.png[width=30]
+image:images/Perry_The_Platypus-210x140.png[width=30] http://c.xkcd.com/random/comic/[.]
