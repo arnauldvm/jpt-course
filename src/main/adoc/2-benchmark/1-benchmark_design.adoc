@@ -2,7 +2,7 @@
 Java Performance Tuning - Designing your benchmarks
 ===================================================
 Arnauld Van Muysewinkel <avm@pendragon.be>
-v1.0, 15-Nov-2015: First version
+v1.0, 18-Nov-2015: First version, plus Anscombe's quartet
 :backend: slidy
 //:theme: volnitsky
 :data-uri:
@@ -264,12 +264,32 @@ Scalability:: ability of the system to utilize more (or less) hardware to match 
 Performance metrics statistics
 ------------------------------
 
+[horizontal]
+mean(x,y):: 9, 7.50
+variance(x,y):: 11, 4.12
+correlation:: 0.816
+linear regression:: y = 3.00 + 0.500 x
+
+What does it look like?
+
+[role="incremental"]
+image::images/640px-Anscombe_s_quartet_3.png[Anscombe's quartet]
+https://en.wikipedia.org/wiki/Anscombe's_quartet
+
+
+Performance metrics statistics
+------------------------------
+
 *Instant measures*
 
 ** Average
 ** Min, Max
 ** Percentile: Pct~n~ = X | n% of the data is pass:[<=]X{br}
 (Note that median &equiv; Pct50)
+
+
+Performance metrics statistics
+------------------------------
 
 Statistics can produce:
 
