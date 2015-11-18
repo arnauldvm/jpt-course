@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pdfsam_saved_jobs version="2.2.4" savedate="15-Nov-2015" selection="org.pdfsam.plugin.merge.GUI.MergeMainGUI">
+<pdfsam_saved_jobs version="2.2.4" savedate="18-Nov-2015" selection="org.pdfsam.plugin.merge.GUI.MergeMainGUI">
   <plugin class="org.pdfsam.guiclient.gui.panels.JInfoPanel" name="About"/>
   <plugin class="org.pdfsam.plugin.mix.GUI.MixMainGUI" name="Alternate Mix">
     <destination value=""/>
@@ -34,6 +34,7 @@
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/3-pdm/w5-dominant_app.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/4-process/0-perf_test_process.pdf" pageselection="All"/>
       <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/5-analysis/1-analysis_tools.pdf" pageselection="All"/>
+      <file name="/Users/avm/prj/jpt/jpt-course/target/pdf/0-extra/4-best_practices.pdf" pageselection="All"/>
     </filelist>
     <destination value="/Users/avm/prj/jpt/jpt-course/target/pdf/jpt-bundle.pdf"/>
     <overwrite value="true"/>
