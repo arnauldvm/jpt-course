@@ -18,3 +18,15 @@ Content
 
 _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 
+
+TODO
+----
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

@@ -308,3 +308,12 @@ http://centers.intranext.smals.be/SIC/Wiki/Pages/WIKI_Best_Practices_for_Perform
 WIKI_Best_Practices_for_Performance.aspx]
 
 image:images/Perry_The_Platypus-210x140.png[width=30] http://c.xkcd.com/random/comic/[.]
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

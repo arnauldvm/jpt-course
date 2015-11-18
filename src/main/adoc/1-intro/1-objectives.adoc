@@ -26,3 +26,12 @@ Objectives of the course
 * find origin of performance issues
 * find evidences of the origin of performance issues
 * avoid spending effort on useless fixes (avoid trial and error)
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====

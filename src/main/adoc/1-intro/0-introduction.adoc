@@ -27,3 +27,12 @@ Introduction to the course
 * {tld}1.5 days on investigating issues
 * 0.5 day on side subjects
 * focus on Java Web Applications (but generalizable to other cases)
+
+
+That's all folks!
+-----------------
+
+[cols="^",grid="none",frame="none"]
+|=====
+|image:../thats-all-folks.png[link="#(1)"]
+|=====
