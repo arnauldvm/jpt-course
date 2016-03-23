@@ -243,6 +243,12 @@ Ambiguities with response times
 image::images/HTTP_ResponseTimes.png[]
 
 
+Typical latencies
+-----------------
+
+image:k0t1e.png[]
+
+
 Performance metrics (cont'd)
 ----------------------------
 
