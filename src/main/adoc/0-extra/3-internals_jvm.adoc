@@ -24,6 +24,7 @@ References
 ----------
 
 * Java Garbage Collection handbook. Plumbr. https://plumbr.eu/java-garbage-collection-handbook
+* GC Algorithms: Implementations. Plumbr. https://plumbr.eu/handbook/garbage-collection-algorithms-implementations
 ** Complete course
 * Visualizing Garbage Collection Algorithms. Ken Fox. http://spin.atomicobject.com/2014/09/03/visualizing-garbage-collection-algorithms/
 ** Animated GIFs
