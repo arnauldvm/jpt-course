@@ -202,6 +202,21 @@ reference test::
 * many loops
 
 
+Types of Load profiles (cont'd)
+-------------------------------
+
+calibration test::
+** increase injection rate until the overall maximum rate sustainable by the system is discovered
+** approximate saturation rate
+** usually precedes a saturation test
+
+saturation test::
+** linear increase of the injection rate from 0 to 110% of approximate saturation rate
+** critical rate: maximum rate where system is inside SLA
+** maximum rate: maximum rate before first error appears
+** saturation rate: overall maximum rate (of successful requests) of the system (even with errors)
+
+
 -> Performance metrics
 ----------------------
 
@@ -434,7 +449,7 @@ digraph G {
 -> Load profiles characteristics
 --------------------------------
 
-* type: reference, load, stress, spike, endurance
+* type: reference, load, calibration, saturation, stress, spike, endurance
 * # of concurrent users _f(t)_
 * # of concurrent sessions _f(t)_
 * throughput setpoint _f(t)_
