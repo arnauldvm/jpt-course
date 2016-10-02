@@ -52,8 +52,8 @@ Part 1: Installation
 ** https://github.com/arnauldvm/jpt-exercises/blob/master/download.md[GitHub / Dropbox]: jpt-exercises
 ** USB key
 * Choose appropriate platform:
-** +jpt-kit-win32-x64.zip+ (269M)
-** +jpt-kit-osx.zip+ (99M)
+** +jpt-kit-win32-x64.zip+ (329M)
+** +jpt-kit-osx.zip+ (155M)
 * Extract to your favorite location (e.g. +C:\javadev\jpt+)
 * Download the exercices from the same location: +jpt-apps.zip+
 * Extract to the same location
