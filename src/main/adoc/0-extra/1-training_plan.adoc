@@ -24,6 +24,8 @@ Writing performance tests
 * _Workshop 1: write your first performance tests_
 
 
+* Performance testing process
+
 Day 1 - PM
 ----------
 
@@ -85,7 +87,6 @@ Day 3 - PM
 Going further
 *****
 
-* Performance testing process
 * Other analysis tools (RG, Excel, R, ELK...)
 * _Workshop 6: Using the Report Generator (beta)_ (?)
 // Is it feasible to share the RG with a broader audience?
