@@ -1,5 +1,18 @@
 #!/bin/bash
 
+force=false
+case "$1" in
+  -f|--force)
+    force=true
+    shift
+    ;;
+esac
+
+#if [ "$1" = "-f" ]; then
+#  force=true
+#  shift
+#fi
+
 srcpath="$1"
 
 srcbasedir=src/main/adoc
@@ -16,7 +29,7 @@ tgtpdfpath="$(echo "$tgtpath" |
   perl -pe 's#^\Q'"$tgtbasedir"'\E#'"$tgtpdfbasedir"'#;
             s#\.html$#.pdf#')"
 
-if [ "$tgtpath" -nt "$srcpath" ]; then
+$force || if [ "$tgtpath" -nt "$srcpath" ]; then
   echo "$tgtpath already exists and is up to date, nothing to do."
   exit
 fi
