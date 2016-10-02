@@ -152,6 +152,7 @@ Threads dump
 * Cheap to produce: no impact on performance
 
 * Analyse the file with ThreadLogic (also gives specific hints in case of a WebLogic dump)
+* or: http://fastthread.io
 
 
 Threads dump
