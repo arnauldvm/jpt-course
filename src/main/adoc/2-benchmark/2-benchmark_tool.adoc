@@ -162,7 +162,8 @@ JMeter - Modes
 
 * GUI -> development, testing of the script
 * command-line -> scripted execution
-* distributed (servers (slave) + one controller)
+* distributed (servers (slave) + one controller) +
+(But we prefer controlling jmeter instances with Jenkins.)
 
 
 JMeter - Structure
