@@ -89,6 +89,12 @@ Mission Sheet
 See template in https://github.com/arnauldvm/jpt-course/tree/master/data/docs[data/docs] in git repo
 
 
+Protocol
+--------
+
+See legacy reference protocol in https://github.com/arnauldvm/jpt-course/tree/master/data/docs[data/docs] in git repo
+
+
 That's all folks!
 -----------------
 
