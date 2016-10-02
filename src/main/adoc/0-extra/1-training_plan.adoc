@@ -17,14 +17,18 @@ Day 1 - AM
 Writing performance tests
 *****
 
-* Introduction
-* _Workshop 0: install training toolsuite_
-* Anatomy of a test
-* Benchmarking tool: basics
-* _Workshop 1: write your first performance tests_
+* link:../1-intro/0-introduction.html#_introduction_to_the_course[Introduction]
+* _link:../1-intro/w0-install.html#_content[Workshop 0: install the training toolsuite]_
 
+* link:../2-benchmark/1-benchmark_design.html#_rtri_anatomy_of_a_test[Designing your benchmarks]: Anatomy of a test
 
-* Performance testing process
+* link:../2-benchmark/2-benchmark_tool.html#_content[Benchmarking tools]:
+** Basics (Injector, Market overview, Threading model, Back-pressure)
+** Introduction to JMeter
+
+* _link:../2-benchmark/w1-first_benchmark.html#_content[Workshop 1: write your first performance tests]_
+
+* link:../4-process/0-perf_test_process.html#_content[Performance testing process]
 
 Day 1 - PM
 ----------
@@ -33,11 +37,15 @@ Day 1 - PM
 Writing performance tests (cont'd)
 *****
 
-* Planning your test
-* Load profiles
-* Metrics
-* Benchmarking tool: threading model, timers
-* Benchmarking tool: parameters
+* link:../2-benchmark/1-benchmark_design.html#_rtri_introduction[Designing your benchmarks]:
+** Planning your test
+** Load profiles
+** Metrics
+
+* link:../2-benchmark/2-benchmark_tool.html#_jmeter_expressions_amp_functions[Benchmarking tools]:
+** JMeter: expressions & functions, shell
+** becoming en expert: randomization, data analysis, mock-ups
+
 * _Workshop 2: wrap up your performance tests_
 
 
