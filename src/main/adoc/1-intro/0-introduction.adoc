@@ -25,7 +25,7 @@ Introduction to the course
 * 50% workshops
 * {tld}1 day on writing performance tests
 * {tld}1.5 days on investigating issues
-* 0.5 day on side subjects
+* side subjects if time allows
 * focus on Java Web Applications (but generalizable to other cases)
 
 
