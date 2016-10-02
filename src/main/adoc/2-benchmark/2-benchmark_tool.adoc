@@ -442,7 +442,7 @@ Randomization
 * *Pragmatism* will tell you not to try randomizing parameters that are irrelevant (i.e. never used as a key for cache nor for index){br}
   *Experience* will tell you to never trust a pragmatic developer who tells you a parameter is irrelevant{br}
   => be *smart*
-* Avoid using contant timers, prefer randomized ones, to avoid repetitiive cycle effects
+* Avoid using contant timers, prefer randomized ones, to avoid repetitive cycle effects
 * In case you know that the UoT is using some caching mechanism, make sure your sample data
   is such that the cache hit/miss rates correspond to reality (may be quite difficult to assess!)
 
