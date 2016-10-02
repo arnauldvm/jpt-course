@@ -125,6 +125,16 @@ Gatling::
 ** suitable for heavy concurrency
 
 
+&rtri; Back-pressure
+--------------------
+
+"\^Z test"::
+* suspend server
+* injector should continue sending requests to keep the injection rate steady +
+(in the real world, users do not stop trying to connect to your web server when it is in trouble)
+* But, if using a limited # of threads, and sync i/o, all the treads will soon be blocked, and the actual injection rate will drop to 0
+* Using async i/o avoids this issue
+
 
 &rtri; JMeter
 -------------
