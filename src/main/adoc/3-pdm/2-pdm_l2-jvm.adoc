@@ -92,6 +92,8 @@ http://gceasy.io
 Memory leaks ... or not!
 ------------------------
 
+See https://github.com/arnauldvm/jpt-course/tree/master/data/gc[data/gc] in the git repo
+
 https://plumbr.eu/blog/memory-leaks/memory-leaks-fallacies-and-misconceptions
 
 
