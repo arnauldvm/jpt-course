@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-find src/main/adoc -type f -name '*.adoc' | sort | perl -pe 's/^(.*)$/include::\1\[\]/' |\
-  asciidoc -a icons -d book -a toc2! -s -a numbered -o - - | \
-  wkhtmltopdf toc - target/pdf/jpt-bundle.pdf
+files=$(find target/html -type f -name '*.html' | sort)
+wkhtmltopdf --title "Java Performance Tuning" --outline --footer-right "Page [page] of [toPage]" toc \
+  $files \
+  target/pdf/jpt-bundle0.pdf
 
