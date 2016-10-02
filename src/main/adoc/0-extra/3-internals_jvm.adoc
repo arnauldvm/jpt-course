@@ -599,6 +599,7 @@ HotSpot 6, 7::
 
 HotSpot 8, 9::
 * "G1": improved algorithm, based on the Mark-and-Copy principles
+* default as of version 9
 
 
 GC Strategies
