@@ -432,6 +432,8 @@ BeanShell
 * Accepts Java-like syntax _(limited to features present in version 4 of Java syntax!)_
 * Has acces to any Java classes, methods, and members
 * Very powerful but may be hard to debug
+* May have an impact on the performance of the injector, especially at high rate +
+-> in those cases, prefer Groovy
 
 
 Randomization
