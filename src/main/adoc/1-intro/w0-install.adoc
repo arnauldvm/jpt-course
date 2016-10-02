@@ -112,6 +112,15 @@ $ gatling.sh or gatling.bat # launches the Gatling injector, hit Ctrl+C to halt
 ----
 
 
+Warning
+-------
+
+[WARNING]
+=====
+Do not read the code until you're told to!
+=====
+
+
 Part 2: Simple benchmarking (launch app)
 ----------------------------------------
 
