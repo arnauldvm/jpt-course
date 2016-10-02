@@ -19,6 +19,7 @@ Content
 // GUI (heavy client) testing (p38-41)
 // Regression testing (p42)
 * <<_rtri_market_overview,Market overview>>
+* <<_rtri_threading_model,Threading model>>, <<_rtri_back_pressure,Back-pressure>>
 // injectors (p37)
 // Standard APi testing (p43-44) + Gattling, LoadRunner ...
 * <<_rtri_jmeter,JMeter>>
