@@ -535,6 +535,15 @@ digraph G {
 GC Principles: Memory Pools
 ---------------------------
 
+Eden + Survivor spaces::
+
+
+image:images/GC-screenshot_small.gif[]
+
+
+GC Principles: Memory Pools
+---------------------------
+
 Old Generation / Tenured::
 * much bigger
 * less frequent collections
