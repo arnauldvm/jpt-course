@@ -86,7 +86,7 @@ _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 Mission Sheet
 -------------
 
-See template
+See template in https://github.com/arnauldvm/jpt-course/tree/master/data/docs[data/docs] in git repo
 
 
 That's all folks!
