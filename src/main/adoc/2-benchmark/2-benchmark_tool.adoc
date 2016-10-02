@@ -109,6 +109,23 @@ Commercial online services (cloud based):
 * ...
 
 
+&rtri; Threading model
+----------------------
+
+JMeter::
+* 1 virtual user = 1 thread, sync i/o
+** subject to back-pressure effect
+** each thread is blocked waiting for a response
+** not suitable for heavy concurrency
+
+Gatling::
+* 1 virtual user != 1 thread, async i/o
+** immune to back-pressure effect
+** threads independant from pending responses
+** suitable for heavy concurrency
+
+
+
 &rtri; JMeter
 -------------
 
