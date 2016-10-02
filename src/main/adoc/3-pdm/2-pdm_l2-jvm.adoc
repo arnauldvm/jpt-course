@@ -83,6 +83,13 @@ GCViewer
 image:images/gcviewer-resized.gif[]
 
 
+Memory leaks ... or not!
+------------------------
+
+https://plumbr.eu/blog/memory-leaks/memory-leaks-fallacies-and-misconceptions
+
+
+
 Memory usage analysis
 ---------------------
 
