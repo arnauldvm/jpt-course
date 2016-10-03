@@ -67,7 +67,9 @@ Part 1: Verification (init)
 ---------------------------
 
 * Start your preferred CLI (bash or CMD) and CD to your install location
-* Execute +. setenv.sh+ (bash) or +setenv.bat+ (CMD)
+* Execute:
+** +. setenv.sh+ (bash) (pay attention to the leading "+.+" followed by a space!)
+** or +setenv.bat+ (CMD)
 ** Your CLI environment is updated
 
 WARNING: This command must be executed each time you start a new CLI!
