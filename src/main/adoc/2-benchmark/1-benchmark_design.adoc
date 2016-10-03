@@ -475,7 +475,7 @@ Load profile requirements
 * Existing system
 ** based on usage statistics (web site)
 * To-be system
-** assumptions on user behaviour ("think-time" between each screen, expected numbr of users...)
+** assumptions on user behaviour ("think-time" between each screen, expected number of users...)
 ** external constraints (e.g. nightly jobs that must run between end of backups and beginning of business hours)
 
 -> Scenarios
