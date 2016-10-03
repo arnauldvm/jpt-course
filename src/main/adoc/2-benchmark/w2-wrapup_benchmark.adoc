@@ -32,6 +32,12 @@ Wrapup the jmeter test, based on given requirements figures
 * randomize parameters
 * implement several kinds of load profiles
 
+[WARNING]
+=====
+1° Write down your (simplified) test protocol
+
+2° _When the protocol is OK_, start implementing it
+=====
 
 Requirements
 ------------
