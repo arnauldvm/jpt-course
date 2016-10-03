@@ -46,7 +46,7 @@ Writing performance tests (cont'd)
 ** JMeter: expressions & functions, shell
 ** becoming en expert: randomization, data analysis, mock-ups
 
-* _Workshop 2: wrap up your performance tests_
+* _link:../2-benchmark/w2-wrapup_benchmark.html#_content[Workshop 2: wrap up your performance tests]_
 
 
 Day 2 - AM
