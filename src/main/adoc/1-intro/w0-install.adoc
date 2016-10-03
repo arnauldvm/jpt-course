@@ -8,7 +8,6 @@ v1.2, 18-Nov-2015: Initial version, including small corrections
 :data-uri:
 :copyright: Creative-Commons-Zero (Arnauld Van Muysewinkel)
 :icons:
-:br: pass:[<br>]
 
 
 Content
@@ -144,7 +143,7 @@ $ ./compile.sh # "compile.bat" under CMD.EXE
 $ ./runserver.sh # "runserver.bat" under CMD.EXE
 Server is listening on port 7666
 ----
-** Should the port not be free, you can change it by editing the launch script{br}
+** Should the port not be free, you can change it by editing the launch script +
 (option +-p\{port}+)
 ** If the OS prompts you to enable access from network to java, click to authorize
 
@@ -153,7 +152,7 @@ Part 2: Simple benchmarking (verify app)
 ----------------------------------------
 
 * Open a new CLI (remember to execute +. setenv.sh+ or +setenv.bat+)
-* Check that the webapp correctly answers to request{br}
+* Check that the webapp correctly answers to request +
 _(the exact output may slightly differ depending on your curl version)_:
 ----
 $ curl localhost:7666 # adapt the port number if required
@@ -163,7 +162,7 @@ Accept=[*/*]
 Host=[localhost:7666]
 User-agent=[curl/7.45.0]
 ----
-* Use your browser to navigate to +http://localhost:7666+{br}
+* Use your browser to navigate to +http://localhost:7666+ +
 and compare the results
 
 
