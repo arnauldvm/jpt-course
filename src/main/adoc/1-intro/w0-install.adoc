@@ -146,6 +146,7 @@ Server is listening on port 7666
 ----
 ** Should the port not be free, you can change it by editing the launch script{br}
 (option +-p\{port}+)
+** If the OS prompts you to enable access from network to java, click to authorize
 
 
 Part 2: Simple benchmarking (verify app)
