@@ -104,6 +104,7 @@ $ jstat -help # JVM monitoring
 $ jstack -help # thread dump
 $ jmap -help # heap dump
 $ jconsole # Graphical tool to monitor the JVM
+$ jvisualvm # Graphical tool, *the* Swiss army knife
 $ jmeter # launches the JMeter GUI (use "jm" under CMD.EXE)
 $ gcviewer # launches the GC Logs Analyzer
 $ mat # launches the Memory Analyzer Tool
