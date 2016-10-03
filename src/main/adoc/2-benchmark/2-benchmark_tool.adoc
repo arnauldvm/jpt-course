@@ -369,7 +369,12 @@ JMeter - Listeners
 
 _____
 [horizontal]
-Aggregate Report:: give a few statistics on each sampler -> ideal for saving the results (enter a filename)
+Aggregate Report:: give a few statistics on each sampler -> ideal for saving the results (enter a filename) +
+
+! remember to generate a dynamic timestamp in the file name to ensure a new unique name at each run
+(timestamps my be generated with the expression +$\{__time(YMDHMS)}+, see also further)
+
+[horizontal]
 View Results Tree:: all request and all responses, very usefull for debugging, but huge memory impact => always remember to disable!
 jp{nil}@{nil}gc - Active Threads Over Time:: threads count over time, usefull for debugging to verify that the load profile is correct
 jp{nil}@{nil}gc - Transactions per Second:: throuhgput over time, usefull for debugging to verify that the load profile is correct
