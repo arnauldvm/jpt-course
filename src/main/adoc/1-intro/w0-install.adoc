@@ -74,6 +74,10 @@ Part 1: Verification (init)
 
 WARNING: This command must be executed each time you start a new CLI!
 
+
+Part 1: Verification (init, cont)
+---------------------------------
+
 * A message gives you the list of available tools:
 
 [horizontal]
