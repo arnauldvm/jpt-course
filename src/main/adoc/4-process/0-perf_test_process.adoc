@@ -76,11 +76,11 @@ Not doing so exposes you to major problems.
 *** Final artifacts
 *** Complete set of input data
 *** Complete set of users (attributes...)
+** [SIC] Detailed test protocol
+*** [Project] Support
 ** [SIC] Prepare test environment
 *** [Project] Support
 *** [Middleware] Support
-** [SIC] Detailed test protocol
-*** [Project] Support
 ** [SIC] Prepare test harness (jmeter scripts, SOAP clients, jenkins configuration...)
 *** [Project] Support
 ** [SIC] Run test
