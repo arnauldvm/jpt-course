@@ -167,7 +167,7 @@ Threads dump
 Threads dump
 ------------
 
-To generate a heap dump:
+To generate a threads dump:
 
 * Find the PID of the JVM
 [source,sh]
