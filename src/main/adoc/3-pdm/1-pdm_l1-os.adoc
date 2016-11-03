@@ -137,6 +137,7 @@ IMPORTANT: Some metrics require Admin privilege!
 Interesting metrics:
 
 * \\System\\Processor Queue Length
+* \\Thread(_Total)\\Context Switches/sec
 * \\Processor(_Total)\\%% Interrupt Time
 * \\Processor(_Total)\\%% User Time
 * \\Processor(_Total)\\%% Privileged Time
