@@ -42,18 +42,8 @@ _(link:../0-extra/1-training_plan.html#_presentations[back to course plan])_
 ** conclusions
 
 
-&rtri; Process
---------------
-
-* quality of inputs is key:
-** precise requirements
-** quantity and randomization of input data
-** objective and well defined scope
-* iterative process
-** design
-** test
-** analyse
-** fix
+&rtri; Iteration
+----------------
 
 [WARNING]
 =====
