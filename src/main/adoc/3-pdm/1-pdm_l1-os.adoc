@@ -145,6 +145,14 @@ Interesting metrics:
 * \\System\\File Write Bytes/sec
 
 
+Resources consumption monitoring: DTrace
+----------------------------------------
+
+Tracing framework developed by SUN. Available on Solaris, OSX, BSD, (Linux).
+
+See also: http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/
+
+
 Threads dump
 ------------
 
