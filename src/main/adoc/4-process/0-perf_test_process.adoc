@@ -14,7 +14,7 @@ Content
 -------
 
 * <<_rtri_documentation,Documentation>>
-* <<_rtri_process,Process>>
+* <<_rtri_iteration,Iteration>>
 * <<_rtri_process_smals,Process for SIC@Smals>>
 ** Steps
 // (p16)
