@@ -36,9 +36,6 @@ Course content
  * Performance analysis methodology, diagnostic model, monitoring tools, profiling
  ** threading model
  ** memory usage (GC)
- ** better DB performance through good usage of JPA
- ** algorithmic complexity
- ** other causes of performance issues
  * Performance testing process
 
 Skills acquired during the training

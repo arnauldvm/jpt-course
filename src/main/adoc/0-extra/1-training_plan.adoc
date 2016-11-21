@@ -151,4 +151,3 @@ Extras
 * link:../0-extra/1-training_plan.html#_content[Course Plan]
 * link:../0-extra/2-internals_os.html#_content[Operating Systems Internals]
 * link:../0-extra/3-internals_jvm.html#_content[Java VM Internals]
-* link:../0-extra/4-best_practices.html#_content[Best Practices]
