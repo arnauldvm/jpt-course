@@ -143,6 +143,12 @@ image:images/dominator_tree.png[]
 (A & B are GC roots)
 
 
+More tools and examples
+-----------------------
+
+https://www.infoq.com/articles/Troubleshooting-Java-Memory-Issues
+
+
 That's all folks!
 -----------------
 
