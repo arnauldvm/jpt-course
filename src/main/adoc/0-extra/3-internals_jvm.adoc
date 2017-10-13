@@ -28,6 +28,10 @@ References
 ** Complete course
 * Visualizing Garbage Collection Algorithms. Ken Fox. http://spin.atomicobject.com/2014/09/03/visualizing-garbage-collection-algorithms/
 ** Animated GIFs
+* Visualizing Java Garbage Collection https://www.infoq.com/presentations/Visualizing-Java-GC
+** Video presentation
+* Understanding Java Garbage Collection and What You Can Do about It https://www.infoq.com/presentations/Understanding-Java-Garbage-Collection
+** Video advanced presentation
 
 Part 1
 ------
